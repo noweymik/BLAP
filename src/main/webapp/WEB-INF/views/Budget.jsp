@@ -23,31 +23,31 @@
 	</style>
 </head>
 <body>
-	<nav class = "navbar navbar-expand-sm navbar-light bg-success ">
-		<a class = "navbar-brand" href="main">
-			<img src="C:\Users\USER\Pictures\img\logo.png">
-		</a>	<!-- 로고로 전환 -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse">
-			<span class="navbar-togler-icon"></span>
-		</button>
-		<div id="navbar" class="collapse navbar-collapse justify-content-center">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="main">ABOUT</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="bucket">BUCKET</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="budget_list">BUDGET</a>
-				</li>
-			</ul>
-		</div>
-		<div class="float-end">
-				<a class="navbar-brand" href="profile">PROFILE</a>
-		</div>
+	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
+	  <div class="container-fluid">
+	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+		   <ul class="navbar-nav">
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/about">ABOUT</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/bucket">BUCKET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/budget">BUDGET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/user">PROFILE</a>
+		      </li>
+		    </ul>
+		  </div>
+	  </div>
 	</nav>
-	<form class="form-inline col-sm-10 my-lg-0">
+	<form class="form-inline col-sm-10 my-lg-0" style="margin-left:20px;">
 		<span>
 			<button class="btn btn-outline-success my-3 p-3" type="category1">
 				<img src="all.png" class="circle"><br>
@@ -91,24 +91,30 @@
 					<span style="font-size:15px;">2022.01.11</span>
 					<button class="btn float-end" onclick="location.href='budget_statistics'" style="font-size:16px;">view more></button><br>
 				</div>
+				<div class="container border col-sm-8 my-3">
+					<span style="font-size:22px;">[취미] 테니스 배우기</span>
+					<span style="font-size:15px;">예상지출:  11만</span><br>
+					<span style="font-size:15px;">2022.01.11</span>
+					<button class="btn float-end" onclick="location.href='budget_statistics'" style="font-size:16px;">view more></button><br>
+				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="bargraph-container col-sm-3 border">
 					<p>예산현황</p>
-					<div class="charts__chart chart--p80  chart--blue    chart--hover">
-						<span class="charts__percent"></span>
-					</div><!-- /.charts__chart -->
-					
-					<div class="charts__chart chart--p60  chart--green   chart--hover">
-						<span class="charts__percent"></span>
-					</div><!-- /.charts__chart -->
-					
-					<div class="charts__chart chart--p40  chart--red     chart--hover">
-					 	<span class="charts__percent"></span>
-					</div><!-- /.charts__chart -->
+					<div class="progress">
+						<div class="progress-bar" style="width:40%">현월예산</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-success" style="width:30%">
+							지출액
+						</div>
+					 	<div class="progress-bar bg-warning" style="width:60%">
+							지출예정액	
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-3">
-					<table class="table table-borderless">
+					<table class="table table-borderless" style="width:400px">
 					    <tbody>
 					      <tr>
 					        <td></td>
