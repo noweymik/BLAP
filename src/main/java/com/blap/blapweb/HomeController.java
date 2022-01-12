@@ -32,7 +32,11 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> branch 'master' of https://github.com/leehyelim0691/BLAP.git
 		return "main";
 	}
 }
