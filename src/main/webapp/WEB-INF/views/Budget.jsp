@@ -8,10 +8,6 @@
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   	
-	<!-- Downloaded chart.css -->
-	<link rel="stylesheet" href="chart.css">
-	<!-- RawGit CDN chart.css -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/theus/chart.css/v1.0.0/dist/chart.css" />
 	<title>Budget List</title>
 	<style>
 		.bargraph-container {
@@ -22,6 +18,7 @@
 		}
 	</style>
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
 	  <div class="container-fluid">
@@ -32,16 +29,16 @@
 	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
 		   <ul class="navbar-nav">
 		      <li class="nav-item me-5">
-		        <a class="nav-link" href="/about">ABOUT</a>
+		        <a class="nav-link" href="/about"><h4>ABOUT</h4></a>
 		      </li>
 		      <li class="nav-item me-5">
-		        <a class="nav-link" href="/bucket">BUCKET</a>
+		        <a class="nav-link" href="/bucket"><h4>BUCKET</h4></a>
 		      </li>
 		      <li class="nav-item me-5">
-		        <a class="nav-link" href="/budget">BUDGET</a>
+		        <a class="nav-link" href="/budget"><h4>BUDGET</h4></a>
 		      </li>
-		      <li class="nav-item me-5">
-		        <a class="nav-link" href="/user">PROFILE</a>
+		      <li class="nav-item me-5 float-end">
+		        <a class="nav-link" href="/user"><h4>PROFILE</h4></a>
 		      </li>
 		    </ul>
 		  </div>
@@ -50,23 +47,23 @@
 	<form class="form-inline col-sm-10 my-lg-0" style="margin-left:20px;">
 		<span>
 			<button class="btn btn-outline-success my-3 p-3" type="category1">
-				<img src="all.png" class="circle"><br>
+				<img src="./resources/assets/img/all.png" class="circle"><br>
 				ALL
 			</button>
 			<button class="btn my-3 p-3" type="category2">
-				<img src="./img/travel.png" class="circle"><br>
+				<img src="./resources/assets/img/travel.png" class="circle"><br>
 				TRAVEL
 			</button>
 			<button class="btn my-3 p-3" type="category3">
-				<img src="C:\Users\USER\Pictures\img\food.png" class="circle"><br>
+				<img src="./resources/assets/img/food.png" class="circle"><br>
 				FOOD
 			</button>
 			<button class="btn my-3 p-3" type="category4">
-				<img src="C:\Users\USER\Pictures\img\shopping.png" class="circle"><br>
+				<img src="./resources/assets/img/shopping.png" class="circle"><br>
 				SHOPPING
 			</button>
 			<button class="btn my-3 p-3" type="category5">
-				<img src="C:\Users\USER\Pictures\img\hobby.png" class="circle"><br>
+				<img src="./resources/assets/img/hobby.png" class="circle"><br>
 				HOBBY
 			</button>
 		</span>
@@ -134,7 +131,7 @@
 					      <tr>
 					      	<td></td>
 					      	<td>예산 초과액</td>
-					      	<td class="primary">+1,028,390</td>
+					      	<td class="primary">-1,028,390</td>
 					      </tr>
 					    </tbody>
 					  </table>
@@ -143,7 +140,10 @@
 		</div>
 	</div>
 
-
+	<div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
+		<p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>
+		<p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
+	</div>
 
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/popper.js"></script>
