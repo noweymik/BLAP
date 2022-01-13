@@ -37,7 +37,7 @@
 	        <a class="nav-link" href="/bucket">BUCKET</a>
 	      </li>
 	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/budget">BUDGET</a>
+	        <a class="nav-link" href="./WEB-INF/views/budget">BUDGET</a>
 	      </li>
 	      <li class="nav-item me-5">
 	        <a class="nav-link" href="/user">PROFILE</a>
