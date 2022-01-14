@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     
     
 <a href="/blapweb/chart/chart1.do">구글차트(json)</a>    
@@ -37,7 +36,7 @@
 	        <a class="nav-link" href="/bucket">BUCKET</a>
 	      </li>
 	      <li class="nav-item me-5">
-	        <a class="nav-link" href="./WEB-INF/views/budget">BUDGET</a>
+	        <a class="nav-link" href="/budget">BUDGET</a>
 	      </li>
 	      <li class="nav-item me-5">
 	        <a class="nav-link" href="/user">PROFILE</a>
