@@ -13,9 +13,30 @@
 	<!-- chart.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 	<title>Budget List</title>
+	<style>
+		body{
+			padding-top:50px;
+		}
+		#categoryimg{
+			width: 45px;
+			height: 45px;
+			object-fit:cover;
+		}
+		@media screen and (min-width: 495px) {
+		  
+		  
+		}
+		@media screen and (max-width: 999px) {
+		    #budget_state_vertical {display:none;}
+		}
+		@media screen and (min-width: 990px) {
+		 	#budget_state_horizontal{display:none;}
+		}
+	</style>
+	
 </head>
 
-<body class="pt-5">
+<body >
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-md bg-white navbar-light fixed-top border-bottom">
 			<img src="./resources/assets/img/logo.png" style="width: 80px; height: 55px">
@@ -36,7 +57,7 @@
 					</li>
 					<li class="nav-item me-5">
 						<h4>
-							<a class="nav-link" href="/Budget">BUDGET</a>
+							<a class="nav-link" href="/budget">BUDGET</a>
 						</h4>
 					</li>
 					<li class="nav-item me-5 float-end">
@@ -53,23 +74,23 @@
 		<form class="form-inline my-lg-0 ">
 			<span>
 				<button class="btn border my-3 p-3" type="category1">
-					<img src="./resources/assets/img/all_checked.png" style="width: 45px; height: 45px"><br>
+					<img src="./resources/assets/img/all_checked.png" id="categoryimg"><br>
 					ALL
 				</button>
 				<button class="btn my-3 p-3" type="category2">
-					<img src="./resources/assets/img/travel.png" style="width: 45px; height: 45px"><br>
+					<img src="./resources/assets/img/travel.png" id="categoryimg"><br>
 					TRAVEL
 				</button>
 				<button class="btn my-3 p-3" type="category3">
-					<img src="./resources/assets/img/food.png" style="width: 45px; height: 45px"><br>
+					<img src="./resources/assets/img/food.png" id="categoryimg"><br>
 					FOOD
 				</button>
 				<button class="btn my-3 p-3" type="category4">
-					<img src="./resources/assets/img/shopping.png" style="width: 45px; height: 45px"><br>
+					<img src="./resources/assets/img/shopping.png" id="categoryimg"><br>
 					SHOPPING
 				</button>
 				<button class="btn my-3 p-3" type="category5">
-					<img src="./resources/assets/img/hobby.png"  style="width: 45px; height: 45px"><br>
+					<img src="./resources/assets/img/hobby.png"  style="width: 45px; height: 45px" id="categorybtn"><br>
 					HOBBY
 				</button>
 			</span>
@@ -79,99 +100,133 @@
 			</span>
 		</form>
 	</div>
+	
 
-	<div class="container-fluid row">
-		<div class="col-lg-7 col-md-12">
-			<div class="container border col-sm-9 my-3 p-3" style="border-radius: 20px;">
-				<span style="font-size: 22px;">[여행] 제주도 여행</span>
-				<span style="font-size: 15px;">예상지출: 62만</span><br>
-				<span style="font-size: 15px;">2022.01.11</span>
-				<button class="btn float-end" onclick="location.href='budget_statistics'"
-					style="font-size: 16px;">view more>
-				</button>
-				<br>
+	<div class="container" style="border:1px solid; border-radius: 10px; height:85px; padding-bottom:10px;" id="budget_state_horizontal">
+		<canvas id="horizontalChart"></canvas>
+	</div>
+	
+	<div class="container" id="content">
+		<div class="row">
+			<div class="col-lg-7 col-md-12">
+				<div class="border col-sm-10 my-3 p-3" style="border-radius: 20px;">
+					<span style="font-size: 22px;">[여행] 제주도 여행</span>
+					<span style="font-size: 15px;">예상지출: 62만</span><br>
+					<span style="font-size: 15px;">2022.01.11</span>
+					<button class="btn float-end" onclick="location.href='budget_statistics'"
+						style="font-size: 16px;">view more>
+					</button>
+					<br>
+				</div>
+				<div class="border col-sm-10 my-3 p-3" style="border-radius: 20px;">
+					<span style="font-size: 22px;">[취미] 테니스 배우기</span>
+					<span style="font-size: 15px;">예상지출: 11만</span><br>
+					<span style="font-size: 15px;">2022.01.11</span>
+					<button class="btn float-end" onclick="location.href='budget_statistics'"
+						style="font-size: 16px;">view more>
+					</button>
+					<br>
+				</div>
+				<div class="border col-sm-10 my-3 p-3" style="border-radius: 20px;">
+					<span style="font-size: 22px;">[취미] 테니스 배우기</span>
+					<span style="font-size: 15px;">예상지출: 11만</span><br> 
+					<span style="font-size: 15px;">2022.01.11</span>
+					<button class="btn float-end" onclick="location.href='budget_statistics'"
+						style="font-size: 16px;">view more>
+					</button>
+					<br>
+				</div>
+				<div class="border col-sm-10 my-3 p-3" style="border-radius: 20px;">
+					<span style="font-size: 22px;">[취미] 테니스 배우기</span>
+					<span style="font-size: 15px;">예상지출: 11만</span><br> 
+					<span style="font-size: 15px;">2022.01.11</span>
+					<button class="btn float-end" onclick="location.href='budget_statistics'"
+						style="font-size: 16px;">view more>
+					</button>
+					<br>
+				</div>
 			</div>
-			<div class="container border col-sm-9 my-3 p-3" style="border-radius: 20px;">
-				<span style="font-size: 22px;">[취미] 테니스 배우기</span>
-				<span style="font-size: 15px;">예상지출: 11만</span><br>
-				<span style="font-size: 15px;">2022.01.11</span>
-				<button class="btn float-end" onclick="location.href='budget_statistics'"
-					style="font-size: 16px;">view more>
-				</button>
-				<br>
+			<div class="container-fluid col-lg-5 col-md-12" id="budget_state_vertical">
+				<div class="row">
+					<span style="font-size: 22px;">예산 현황</span>
+					<div class="container-fluid col-sm-5 p-3 border" style="border:1px solid; border-radius: 10px; height:375px;">
+						<br>
+						<canvas id="verticalChart" style="weight:60%; height:100%; padding: 10px;"></canvas>
+					</div>
+					<div class="container-fluid col-sm-7 row" style="font-size:15px;text-align:right;">
+						<div class="col-sm-1 p-0">
+							<div class="col-sm-12" style="margin-top:40%; padding-bottom:100%; border-radius:50%;background-color:#F4B5B5;"></div>
+							<div class="col-sm-12" style="margin-top:40%; padding-bottom:100%; border-radius:50%;background-color:#F9D7D7;"></div>
+							<div class="col-sm-12" style="margin-top:40%; padding-bottom:100%; border-radius:50%;background-color:#FFE2E2;"></div>
+						</div>
+						<div class="col-sm-5">
+							<div class="col-sm-12" style="margin-top:8%; min-width:85px">현월 예산</div>
+							<div class="col-sm-12" style="margin-top:8%; min-width:85px">현재 지출액</div>
+							<div class="col-sm-12" style="margin-top:8%; min-width:85px">예정 지출액</div>
+							<div class="col-sm-12" style="margin-top:8%; min-width:85px">초과 예산</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="col-sm-12" style="margin-top:8%; min-width:80px; margin-left:min(15px,1%)">680,000</div>
+							<div class="col-sm-12" style="margin-top:8%; min-width:80px; margin-left:min(15px,1%)">568,390</div>
+							<div class="col-sm-12" style="margin-top:8%; min-width:80px; margin-left:min(15px,1%)">1,140,000<div>
+							<div class="col-sm-12" style="margin-top:8%; min-width:80px; margin-left:min(15px,1%); color:red">-1,028,390</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="container border col-sm-9 my-3 p-3" style="border-radius: 20px;">
-				<span style="font-size: 22px;">[취미] 테니스 배우기</span>
-				<span style="font-size: 15px;">예상지출: 11만</span><br> 
-				<span style="font-size: 15px;">2022.01.11</span>
-				<button class="btn float-end" onclick="location.href='budget_statistics'"
-					style="font-size: 16px;">view more>
-				</button>
-				<br>
-			</div>
-			<div class="container border col-sm-9 my-3 p-3" style="border-radius: 20px;">
-				<span style="font-size: 22px;">[취미] 테니스 배우기</span>
-				<span style="font-size: 15px;">예상지출: 11만</span><br> 
-				<span style="font-size: 15px;">2022.01.11</span>
-				<button class="btn float-end" onclick="location.href='budget_statistics'"
-					style="font-size: 16px;">view more>
-				</button>
-				<br>
-			</div>
-		</div>
-		<div class="container-fluid col-lg-5 col-md-12">
-			<span style="font-size: 22px;">예산 현황</span>
-			<div class="container-fluid col-sm-5 p-3 border" style="border-radius: 10px; height:400px">
-				<canvas id="myChart" style="weight:60%; height:100%; padding: 10px;
-					border: 1px solid #000000; border-radius: 15px;"></canvas>
-			</div>
-			<div class="col-sm-7">
-				
-			</div>
-			<table class="table table-borderless" style="width: 400px">
-					<tbody>
-						<tr>
-							<td></td>
-							<td>현월 예산</td>
-							<td>680,000</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>지출액</td>
-							<td>568,390</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>지출 예정액</td>
-							<td>1,140,000</td>
-						</tr>
-						<tr>
-							<td></td>
-								<td>예산 초과액</td>
-								<td class="primary">-1,028,390</td>
-						</tr>
-					</tbody>
-				</table>
 		</div>
 	</div>
+	</div>
+	</div>
 
-	<div class="mt-4 p-3 bg-secondary text-white text-end"
-		style="margin-bottom: 0; background-color: #C1DDD3 !important; height: 100px">
+
+	<div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom: 0; background-color: #C1DDD3 !important; height: 100px">
 		<p class=" pt-5" style="display: inline-block; font-size: 13px">이용약관</p>
 		<p class="pt-5" style="display: inline-block; font-size: 13px">도움말</p>
 	</div>
 
 
-	<script src="./js/jquery.min.js"></script>
 	<script src="./js/popper.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
-
 	<script>
 	var xValues = ["예산","지출"];
-	new Chart("myChart", {
+	new Chart("verticalChart", {
 	  type: "bar",
 	  data: {
 	    labels: xValues,
+	    datasets: [{ 
+	      data: [680000/10000,0],
+	      stack:true,
+	      label:"현월 예산",
+	      backgroundColor: "#F4B5B5",
+	      fill: false
+	    }, { 
+	      data: [0,568390/10000],
+	      backgroundColor: "#F9D7D7",
+	      label:"현재 지출액",
+	      stack:true,
+	      fill: false
+	    }, { 
+	      data: [0,1140000/10000],
+	      backgroundColor: "#FFE2E2",
+	      label:"지출 예정액",
+	      stack:true,
+	      fill: false
+	    }]
+	  },
+	  options: {
+	    legend: {display: false},
+	    responsive:true,
+	    maintainAspectRatio:false
+	  }
+	});
+	</script>
+	<script>
+	var yValues = ["예산","지출"];
+	new Chart("horizontalChart", {
+	  type: "horizontalBar",
+	  data: {
+	    labels: yValues,
 	    datasets: [{ 
 	      data: [680000/10000,0],
 	      stack:true,
