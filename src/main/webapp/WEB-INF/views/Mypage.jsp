@@ -18,26 +18,27 @@
             #cate_m_modal, #cate_p_modal, #add_modal {
                 display: none;
                 width: 400px;
+                height:200px; 
                 padding: 10px 60px;
                 background-color: #fefefe;
                 border: 2px solid black;
                 border-radius: 5px;
             }
 
-            #cate_p_modal.modal_close_btn, #cate_m_modal .modal_close_btn, #add_modal .modal_close_btn {
+            #cate_p_modal .modal_close_btn, #cate_m_modal .modal_close_btn, #add_modal .modal_close_btn {
                 position: absolute;
-                top: 10px;
+                top: 5px;
                 right: 10px;
             }
             
-             #finish {
+             #cate_m_modal .finish, #cate_p_modal .finish, #add_modal .finish {
                 position: absolute;
-                top: 10px;
-                right: 10px;
+                bottom: 30px;
+                right: 50px;
                 border: 0px;
             	background-color: white;
-            	height:15; 
-	            width:30;
+            	height:8; 
+	            width:16;
             }
             
             input{
