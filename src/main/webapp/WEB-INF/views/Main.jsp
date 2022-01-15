@@ -1,11 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     
-    
-<a href="/blapweb/chart/chart1.do">구글차트(json)</a>    
-<a href="/blap/chart/chart2.do">구글차트(db)</a>    
-<a href="/blap/jchart/chart1.do">JFreeChart1(png)</a>    
-<a href="/blap/jchart/chart2.do">JFreeChart2(pdf)</a>    
-    
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
