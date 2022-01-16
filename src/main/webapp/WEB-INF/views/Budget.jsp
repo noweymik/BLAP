@@ -18,8 +18,8 @@
 			padding-top:50px;
 		}
 		.categoryimg{
-			max-width: 45px;
-			height: auto;
+			width: 45px;
+			height: 45px;;
 			object-fit:cover;
 		}
 		
@@ -100,43 +100,7 @@
 	
 </head>
 
-<<<<<<< HEAD
 <body>
-	<div class="container-fluid">
-		<nav class="navbar navbar-expand-md bg-white navbar-light fixed-top border-bottom">
-			<img src="./resources/assets/img/logo.png" style="width: 80px; height: 55px">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-				<ul class="navbar-nav ">
-					<li class="nav-item me-5">
-						<h4>
-							<a class="nav-link" href="/about">ABOUT</a>
-						</h4>
-					</li>
-					<li class="nav-item me-5">
-						<h4>
-							<a class="nav-link" href="/bucket">BUCKET</a>
-						</h4>
-					</li>
-					<li class="nav-item me-5">
-						<h4>
-							<a class="nav-link" href="/budget">BUDGET</a>
-						</h4>
-					</li>
-					<li class="nav-item me-5 float-end">
-						<h4>
-							<a class="nav-link" href="/user">PROFILE</a>
-						</h4>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-=======
-<body >
-	
 	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
 	  <div class="container-fluid">
 	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
@@ -162,13 +126,12 @@
 	  </div>
 	</nav>
 
->>>>>>> branch 'master' of https://github.com/leehyelim0691/BLAP.git
 	<br>
 	<div class="container" style="font-size:18px;">
 		<form class="form-inline my-lg-0">
 			<span>
 				<button class="btn border my-3 p-3" type="category0">
-					<img src="./resources/assets/img/all_checked.png" class="categoryimg"><br>
+					<img src="./resources/assets/img/all_checked.png" style="width:45px;height:45px;"><br>
 					ALL
 				</button>
 				<button class="btn my-3 p-3" type="category1">
@@ -187,11 +150,10 @@
 					<img src="./resources/assets/img/hobby.png" class="categoryimg"><br>
 					HOBBY
 				</button>
-				<button class="btn btn-success my-4 p-2 float-end p-2" onclick="location.href='Budget_statistics'">통계</button>
+				<button class="btn btn-success my-4 p-2 float-end p-2" onclick="location.href='ExpenditureStatistics'">통계</button>
 			</span>
 		</form>
 	</div>
-	
 
 	<div class="container" style="border:1px solid; border-radius: 10px; height:85px; padding-bottom:10px;" id="budget_state_horizontal">
 		<canvas id="horizontalChart"></canvas>
@@ -370,7 +332,7 @@
 	    legend: {display: false},
 	    responsive:true,
 	    maintainAspectRatio:false
-	  }
+	  } 
 	});
 	</script>
 	<script>
