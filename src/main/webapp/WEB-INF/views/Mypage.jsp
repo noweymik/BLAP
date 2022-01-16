@@ -207,6 +207,14 @@
 				
 				
 			</div>
+			
+					<!-- footer -->
+<!-- <div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
+	<p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>
+	<p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
+</div> -->
+
+
 			<!-- 금액추가모달 -->
 			 <div id="add_modal">
 			 <div style = "font-size: 18px; text-align:center; ">예산추가</div>
@@ -245,6 +253,9 @@
             <a class="modal_close_btn" style = "font-size 14px; text-align:center; ">x</a>
         </div>
 		</div>
+		
+
+
 		        <script>
             function modal(id) {
                 var zIndex = 9999;

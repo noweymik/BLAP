@@ -37,38 +37,32 @@
 </head>
 
 <body >
-	<div class="container-fluid">
-		<nav class="navbar navbar-expand-md bg-white navbar-light fixed-top border-bottom">
-			<img src="./resources/assets/img/logo.png" style="width: 80px; height: 55px">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-				<ul class="navbar-nav">
-					<li class="nav-item me-5">
-						<h4>
-							<a class="nav-link" href="/about">ABOUT</a>
-						</h4>
-					</li>
-					<li class="nav-item me-5">
-						<h4>
-							<a class="nav-link" href="/bucket">BUCKET</a>
-						</h4>
-					</li>
-					<li class="nav-item me-5">
-						<h4>
-							<a class="nav-link" href="/budget">BUDGET</a>
-						</h4>
-					</li>
-					<li class="nav-item me-5 float-end">
-						<h4>
-							<a class="nav-link" href="/user">PROFILE</a>
-						</h4>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+	
+	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
+	  <div class="container-fluid">
+	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+		   <ul class="navbar-nav">
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/about">ABOUT</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/bucket">BUCKET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/budget">BUDGET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/user">PROFILE</a>
+		      </li>
+		    </ul>
+		  </div>
+	  </div>
+	</nav>
+
 	<br>
 	<div class="container" style="font-size:18px;">
 		<form class="form-inline my-lg-0 ">
