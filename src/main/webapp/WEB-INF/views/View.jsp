@@ -13,7 +13,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>New Bucket list</title>
+    <title>View My Bucket</title>
     <style>
         .star-rating input {
             display: none;
@@ -40,23 +40,10 @@
             border-left: 3px solid gray;
             height: 500px;
         }
-        .file-button {
-            display: inline;
-            margin-left: 2.8%;
-            /* width: 65%; */
-            border: 1px solid black;
-            cursor: pointer;
-            padding: 0.48% 31%;
-            /* justify-content: center; */
-            text-align: right;
-        }
-        #photo {
-            visibility: hidden;
-        }
-
+        
         #info-1 {
             display: inline-block;
-            margin-left: 150px;
+            margin-left: 15%;
             width: 35%;
         }
         #info-2 {
@@ -86,20 +73,21 @@
         .index {
             text-align: right;
         }
-        input[type=submit] {
-            background-color: rgba(173, 172, 172, 1);
+        #startbutton {
+            background-color: rgba(227, 158, 153, 1);
+            color : white;
             border: none;
-            color: white;
             padding: 5px 20px;
             text-decoration: none;
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 10%;
         }
-        input[type=reset] {
-            background-color: white;
-            border: 0.2px solid black;
-            padding: 4.8px 19.8px;
+        #completebutton {
+            background-color: rgba(153, 174, 227, 1);
+            color : white;
+            border: none;
+            padding: 5px 20px;
             text-decoration: none;
             margin: 4px 2px;
             cursor: pointer;
@@ -123,34 +111,26 @@
         <!-- 여기는 nav부분~~ -->
     </nav>
 
-    <h3 style = 'text-align: center;'> NEW BUCKET LIST </h3><br>
+    <h3 style = 'text-align: center;'> 제목 변수명 </h3><br>  
+    <!-- <%-- <%= u.getUserid()%> --%> -->
     
-    <form method="post" enctype="multipart/form-data" action="#"></form>
-    <!-- 왼쪽 정보 적는 부분 (예상 비용 제외 부분) -->
-    <!-- <div id = "infoWrite"> -->
-    
+       
     <div id="info-1">
-            <div class="title"><span>제목</span>
-            <div class="vl"></div></div>
-            <input type="text" name="title" style="margin: 1% 0 0 3.5%; padding: 1px; width: 65%;" />
-        <br><br><br>
+
+        
         <div class="title"><span>카테고리</span>
             <div class="vl"></div></div>
-                <div style="margin: 100px 0 0px 3.5%; display: inline;">
-                    <input type="checkbox" id="choice1" name="type" value="여행"> 여행&nbsp;&nbsp;
-                    <input type="checkbox" id="choice2" name="type" value="운동"> 운동&nbsp;&nbsp;
-                    <input type="checkbox" id="choice3" name="type" value="음식" > 음식&nbsp;&nbsp;
-                    <input type="checkbox" id="choice4" name="type" value="취미" > 취미&nbsp;&nbsp;
-                    <input type="checkbox" id="choice5" name="type" value="구매" > 구매&nbsp;&nbsp;
-                    <input type="checkbox" id="choice6" name="type" value="기타" > 기타<br>
-                </div>
-                <br>
-                <div class="title"><span>목표일</span>
-            <div class="vl"></div></div>
-            <input type="date" style="margin: 3% 0 0px 3.5%; padding: 1px; width: 65%;" />
-            <br><br><br>
+                <!-- <div style="margin: 100px 0 0px 3.5%; display: inline;"> -->
+                    <span style="margin-left: 2%;">카테고리 변수명</span>
+                <!-- </div> -->
+                <br><br><br>
+                
+        <div class="title"><span>목표일</span>
+			<div class="vl"></div></div>
+            	<span style="margin-left: 2%;">목표일 변수명</span>
+                <br><br><br>
 
-            <div class="title"><span>필요도</span>
+		<div class="title"><span>필요도</span>
             <div class="vl"></div></div>
                 <div class="star-rating ness" style="display: inline; margin-left: 3%;">
                     <input type="radio" id="5-stars-ness" name="rating-ness" value="5"/>
@@ -199,16 +179,11 @@
                 <br><br><br>
                 <div class="title"><span>사진</span>
             <div class="vl"></div></div>
-            <div class="file-button">
-                <label for="photo">
-                    <img src="/resurces/assets/img/img.png">
-                </label>
-            </div>
-            <input type="file" id="photo" name="photo"style="margin: 3% 0 0px 3.5%; padding: 1px; padding: 2px; width: 300px;" accept="image/*"/></td>
-        <br>
+            <span style="margin-left: 2%;">사진</span>
+        <br><br><br>
         <div class="title" style="vertical-align: top;"><span>메모</span>
             <div class="vl"></div></div>
-            <textarea cols="50" rows="5" name="detail" style="margin: 0% 0 0px 3.5%; padding:4px; width: 65%;"></textarea>
+            <span style="margin-left: 2%;">메모 변수명</span>
         <br>
 </div>
 <!-- 오른쪽 정보 적는 부분 (예상 비용) -->
@@ -223,40 +198,43 @@
         <br><br>
         
         <div class="index">1</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense1" type="text" onkeyup='add()' style="width: 78%;"/> 원</div>
+        <div class="col"> 1번 항목 내용 변수명 </div>
+        <div class="col">&nbsp;&nbsp;1-예상비용변수명 원</div>
         <br><br>
 
         <div class="index">2</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense2" type="text" onkeyup='add()'style="width: 78%;"/> 원</div>
+        <div class="col"> 2번 항목 내용 변수명 </div>
+        <div class="col">&nbsp;&nbsp;2-예상비용변수명 원</div>
         <br><br>
 
         <div class="index">3</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense3" type="text" onkeyup='add()'style="width: 78%;"/> 원</div>
+        <div class="col"> 3번 항목 내용 변수명 </div>
+        <div class="col">&nbsp;&nbsp;3-예상비용변수명 원</div>
         <br><br>
 
         <div class="index">4</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense4" type="text" onkeyup='add()'style="width: 78%;"/> 원</div>
+        <div class="col"> 4번 내용 변수명 </div>
+        <div class="col">&nbsp;&nbsp;4-예상비용변수명 원</div>
         <br><br>
-        <div class="index">5</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense5" type="text" onkeyup='add()'style="width: 78%;"/> 원</div>
         
+        <div class="index">5</div>  
+        <div class="col"> 5번 항목 내용 변수명 </div>
+        <div class="col">&nbsp;&nbsp;5-예상비용변수명 원</div>
         <br><br>
+        
         <div class="col"></div>  
         <div class="col">예상지출총액</div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="allexpense" type="text" style="width: 78%;"/><span> 원</span></div>
+        <div class="col">&nbsp;&nbsp;총 예상비용변수명 원</span></div>
         
     </div>
 </div>
 
-    <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
-    <input type="submit" value="등록" style="margin-left: 5%;" onclick="alert('등록되었습니다.');">
-</form>
+    <input type="button" id = "startbutton" value="시작" style="margin-left: 75%; margin-top: 5px;" onclick="alert('해당 버킷이 시작되었습니다.');">
+    <input type="button" id = "completebutton" value="완료" style="margin-left: 5%;" onclick="alert('해당 버킷이 완료로 처리되었습니다.');">
 
+<!-- <input type="button" value="돌아가기" style="margin-left: 50%;"> -->
+<br><br><br>
+<a href ="#" style="margin-left: 48%; ">돌아가기</a>
 <footer>
     <div style="float:right;">
         <span><a href="#">이용약관</a></span>
@@ -264,4 +242,5 @@
     </div>
 </footer>
 </body>
+</html>
 </html>

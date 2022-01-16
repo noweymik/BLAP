@@ -13,7 +13,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>New Bucket list</title>
+    <title>EDIT MY BUCKET</title>
     <style>
         .star-rating input {
             display: none;
@@ -123,11 +123,11 @@
         <!-- 여기는 nav부분~~ -->
     </nav>
 
-    <h3 style = 'text-align: center;'> NEW BUCKET LIST </h3><br>
+    <h3 style = 'text-align: center;'> EDIT MY BUCKET </h3><br>
     
     <form method="post" enctype="multipart/form-data" action="#"></form>
     <!-- 왼쪽 정보 적는 부분 (예상 비용 제외 부분) -->
-    <!-- <div id = "infoWrite"> -->
+  
     
     <div id="info-1">
             <div class="title"><span>제목</span>
@@ -201,7 +201,7 @@
             <div class="vl"></div></div>
             <div class="file-button">
                 <label for="photo">
-                    <img src="/resurces/assets/img/img.png">
+                    <img src="/resurces/img/img.png">
                 </label>
             </div>
             <input type="file" id="photo" name="photo"style="margin: 3% 0 0px 3.5%; padding: 1px; padding: 2px; width: 300px;" accept="image/*"/></td>
@@ -248,13 +248,13 @@
         <br><br>
         <div class="col"></div>  
         <div class="col">예상지출총액</div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="allexpense" type="text" style="width: 78%;"/><span> 원</span></div>
+        <div class="col">&nbsp;&nbsp;<input id="allexpense" type="text" style="width: 78%;"/><span> 원</span></div>
         
     </div>
 </div>
 
     <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
-    <input type="submit" value="등록" style="margin-left: 5%;" onclick="alert('등록되었습니다.');">
+    <input type="submit" value="수정" style="margin-left: 5%;" onclick="alert('수정되었습니다.');">
 </form>
 
 <footer>
