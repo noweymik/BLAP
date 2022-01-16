@@ -12,7 +12,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- 모달 -->
 	<style>
             #cate_m_modal, #cate_p_modal, #add_modal {
@@ -31,7 +31,7 @@
                 right: 10px;
             }
             
-             #cate_m_modal .finish, #cate_p_modal .finish, #add_modal .finish {
+             #cate_m_modal .finish, #cate_p_modal .finish {
                 position: absolute;
                 bottom: 30px;
                 right: 50px;
@@ -40,7 +40,11 @@
             	height:8; 
 	            width:16;
             }
-            
+             #add_modal .finish{
+             	position: absolute;
+                bottom: 10px;
+                right: 20px;
+            }
             input{
 	             background-color: #EBEBEB;
 	             padding: 5px;
@@ -56,7 +60,7 @@
 
   <body>
       <!-- navbar 여기는 지워도 괜찮을 거 같아용 -->
-	      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	     <!--  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	        <div class="container-fluid">
 	          <a class="navbar-brand" href="#">Navbar</a>
 	          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +75,34 @@
 	            </div>
 	          </div>
 	        </div>
-	      </nav>
+	      </nav> -->
+	      
+	      <!-- style="border: 3px solid purple" -->
+	      
+	      <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
+  <div class="container-fluid">
+      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+	   <ul class="navbar-nav">
+	      <li class="nav-item me-5">
+	        <a class="nav-link" href="/about">ABOUT</a>
+	      </li>
+	      <li class="nav-item me-5">
+	        <a class="nav-link" href="/bucket">BUCKET</a>
+	      </li>
+	      <li class="nav-item me-5">
+	        <a class="nav-link" href="/budget">BUDGET</a>
+	      </li>
+	      <li class="nav-item me-5">
+	        <a class="nav-link" href="/user">PROFILE</a>
+	      </li>
+	    </ul>
+	  </div>
+  </div>
+</nav>
     
 	<!-- content -->
 		<div class="container" style = "font-size:18px;">
@@ -83,17 +114,17 @@
 				<!-- 프로필 -->
 				
 					<div class = "ml-3" style="padding-left: 37px; padding-bottom: 5px;"><img src="resources/assets/img/user.png" height="70" width="70"></div>
-					<div  class = "row mt-5" style="padding-left: 58px; display:inline; padding-top: 5px"> 홍길동<small class = "text-muted"> logout</small></div>
-					<div class = "row" style="text-align:center; padding-top: 5px" >20000000@gmail.com</div>
+					<div  class = "row mt-5" style="padding-left: 58px; display:inline; padding-top: 5px;"> 홍길동<small class = "text-muted"> 로그아웃</small></div>
+					<div class = "row" style="text-align:center; padding-top: 5px" >2000000@gmail.com</div>
 				</div>	
 				
 				<!-- 잔여금액 -->
-				<div class = "col-6 " >
-					<div class = "row mt-5" >
+				<div class = "col-6"  >
+					<div class = "row mt-5"  >
 						잔여금액
-						<div class = "col-1 "></div>
-						<div class = "col-3  alert-secondary" style = "text-align:center" >360,000</div>
-						<div class = "col-1 ">₩</div>
+						<div class = "col-1 " ></div>
+						<div class = "col-3  alert-secondary align-middle" style = "text-align:center; line-height: 40px; width: 180px; height: 40px;background-color:#EBEBEB; border-radius:8px;" >360,000</div>
+						<div class = "col-1" style="line-height: 40px;">₩</div>
 						<div class = "col-3" style = "text-align:center;"><button id="popup_open_btn"><img src="resources/assets/img/금액추가.png" height="40" width="40"></button></div>
 					</div>
 					
@@ -110,7 +141,7 @@
 						</div>
 						<div class = "row">
 							<div class = "col-3"></div>
-							<div class = "col-3 " style = "font-size: 15px; text-align:center; color:#8B8B8F">680,000원</div>
+							<div class = "col-3 " style = "font-size: 15px; text-align:center; color:#8B8B8F; border-radius:8px">680,000원</div>
 						</div>
 					<!-- 여기까지 한 묶음 -->
 					
@@ -118,7 +149,7 @@
 						    <div class = "col-2"></div>
 							<div class = "col-1 "style=" text-align:right;">1/7</div>
 							<div class = "col-3 " style = "text-align:center;color:#FC0808">-300,000</div>
-							<div class = "col-3" style = "text-align:center">제주도 여행</div>
+							<div class = "col-3" style = "font-size: 15px">제주도 여행</div>
 						</div>
 						<div class = "row">
 							<div class = "col-3"></div>
@@ -150,8 +181,8 @@
 						<div class = "row mt-2">
 							<div class = "col-2"></div>
 							<div class = "col-1 "style=" text-align:right;">1/22</div>
-							<div class = "col-3 " style = "text-align:center; color:#FC0808">-150,000</div>
-							<div class = "col-3" style = "text-align:center">테니스레슨</div>
+							<div class = "col-3 " style = "text-align:center; color:#FC0808;" >-150,000</div>
+							<div class = "col-sm-3" style = " font-size: 15px; ">테니스레슨</div>
 						</div>
 						<div class = "row">
 							<div class = "col-3"></div>
@@ -180,12 +211,14 @@
 			 <div id="add_modal">
 			 <div style = "font-size: 18px; text-align:center; ">예산추가</div>
             	
-            <div class = "row mt-4 mb-4">
-            <div class="col" style = "font-size:14px;" >추가할 금액</div>
-            <div class="col" style = "font-size: 14px;" ><input type = "text"></div>
+            <div class = "row mt-4 mb-4 pt-4">
+            <div class="col-4" style = "font-size:15px;" >추가할 금액</div>
+            <div class="col-3" style = "font-size: 16px; border-radius:3px;" ><input type = "text"></div>
             </div>
-            <a class="finish"><img src="resources/assets/img/완료버튼 이미지.png" ></a>
-            <a class="modal_close_btn" style = "font-size 14px; text-align:center; ">x</a>
+            <!-- <a class="finish"><img src="resources/assets/img/완료버튼 이미지.png" ></a> -->
+            <button class="finish" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">완료</button>
+            <a class="modal_close_btn" style = "font-size 25px; text-align:center;  text-decoration-line: none; color : black">x</a>
+<!--             <a class="modal_close_btn"><i class="fas fa-times "></i></a>-->
         </div>
         
         <!-- 카테고리추가모달 -->
