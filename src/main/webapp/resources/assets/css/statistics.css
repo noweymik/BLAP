@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* 버튼 색 바꾸기 */
+.btn-primary {
+    background-color: #C1DDD3;
+    border-color: #C1DDD3;
+    color: #FFF; }
+.btn-primary:hover,
+.btn-primary:focus {
+    border-color: #A3BBAD;
+    background-color: #A3BBAD;
+    color: #FFF; }
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+    border-color: #98a99f;
+    background-color: #98a99f;
+    color: #FFF; }
+    
+.btn-outline-primary {
+    background-color: #FFF;
+    border-color: #C1DDD3;
+    color: #C1DDD3; }
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    border-color: #A3BBAD;
+    background-color: #FFF;
+    color: #A3BBAD; }
+.btn-outline-primary:active,
+.btn-outline-primary:visited,
+.btn-outline-primary:active:focus,
+.btn-outline-primary:active:hover {
+    border-color: #98a99f;
+    background-color: #FFF;
+    color: #98a99f; }
