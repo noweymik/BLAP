@@ -70,13 +70,11 @@
 			margin-top:30px;
 			overflow-y:auto;
 			word-break:break-word;
-
 		}
 		table{
 			background-color:#F5F5F5;
 			border:1px solid #444444;
 			border-collapse: collapse;
-
 		}
 		th {
 			border:1px solid #444444;
@@ -228,7 +226,7 @@
 	</div>
 
 	<div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom: 0; background-color: #C1DDD3 !important; height: 100px">
-		<p class=" pt-5" style="display: inline-block; font-size: 13px">이용약관</p>
+		<p class="pt-5" style="display: inline-block; font-size: 13px">이용약관</p>
 		<p class="pt-5" style="display: inline-block; font-size: 13px">도움말</p>
 	</div>
 	
