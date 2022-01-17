@@ -16,11 +16,17 @@
        height: 40px;
        background: #aaa;
    }
+   .star-pref{
+   		color : #FFCC16;
+   }
+   .card{
+   		background-repeat : no-repeat;
+        background-size : cover;
+     }
 </style>
 </head>
-<body>
+<body class="pt-5">
     <!-- HEADER -->
-<<<<<<< HEAD
 	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
   <div class="container-fluid">
   	 <a href=".">
@@ -49,43 +55,6 @@
 </nav>
 
 <br>
-=======
-	<div class="container-fluid pt-3 border bg-white text-dark text-center">
-        <div class="row">
-            <div class="col-sm-2 text-start">
-                <button type="button" class="btn btn-outline-white text-dark">
-                    <div class="fakeimg">Fake Image</div>
-                </button>
-            </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <button type="button" class="btn btn-outline-white text-dark">
-                            <h3> ABOUT </h3>
-                        </button>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" class="btn btn-outline-white text-dark">
-                            <h3> BUCKET </h3>
-                        </button>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" class="btn btn-outline-white text-dark">
-                            <h3> BUDGET </h3>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-2 text-end">
-                <button type="button" class="btn btn-outline-white text-dark">
-                    <h3> PROFILE </h3>
-                </button>
-            </div>
-        </div>
-	</div>
->>>>>>> branch 'master' of https://github.com/leehyelim0691/BLAP.git
     <!-- MAIN -->
     <div class="row">
         <!-- CATEGORY -->
@@ -203,128 +172,225 @@
 	<div class="container mt-5">
 		<div class="row">
 			<div class="col-sm-4 pt-3">
-				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">제주도 여행</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item mx-1">
-                                <button onclick="location.href='./EditList'" class="btn btn-dark">수정</button>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <button href="#" class="btn btn-dark">삭제</button>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <button href="#" class="btn btn-dark">자세히</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+				<div class="card" style="width:370px; height:370px; text-align:center; vertical-align:middle; display:table-cell; background-image: url(./resources/assets/img/bucket1.png);">
+	                   <div class="align-middle text-center mt-3 w-100" style=" text-align:center; vertical-align:middle; display: inline-block;">
+	                        <h5 class="fw-bolder">제주도 여행</h5>
+	                        <div align="left">
+	                        	<div align="left" class="mt-5 d-flex justify-content-around ">
+								  	<p class="text-start" style="display: inline; ">예상비용</p>
+								  	<p style="display: inline; " >700,000원</p>
+								</div> 
+								 <div align="left" class="d-flex justify-content-around w-100">
+								  	<p style="display: inline; ">필요도<p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★★</label>
+								</div> 
+								 <div class="d-flex justify-content-around w-100">
+								  	<p style="display: inline;">선호도</p>
+								    <label for="5-stars-pref" class="star-pref"  style="display: inline;" >★</label>
+								</div> 
+								 <div class=" d-flex justify-content-around w-100">
+								  	<p style="display: inline;">우선순위</p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★</label>
+								</div> 
+		                        <ul class="nav justify-content-end mt-3">
+		                            <li class="nav-item mx-1">
+		                               <button class="bg-white"  onclick="location.href='./EditList'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">수정</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white"   onclick="alert('삭제되었습니다.'); location.href='./Bucketlist'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">삭제</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white" onclick="location.href='./View'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">자세히</button>
+		                            </li>
+		                        </ul>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+				<div class="col-sm-4 pt-3">
+					<div class="card" style="width:370px; height:370px; text-align:center; vertical-align:middle; display:table-cell; background-image: url(./resources/assets/img/bucket2.png);">
+	                   <div class="align-middle text-center mt-3 w-100" style=" text-align:center; vertical-align:middle; display: inline-block;">
+	                        <h5 class="fw-bolder">테니스 배우기</h5>
+	                        <div align="left">
+	                        	<div align="left" class="mt-5 d-flex justify-content-around ">
+								  	<p class="text-start" style="display: inline; ">예상비용</p>
+								  	<p style="display: inline; " >700,000원</p>
+								</div> 
+								 <div align="left" class="d-flex justify-content-around w-100">
+								  	<p style="display: inline; ">필요도<p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★★</label>
+								</div> 
+								 <div class="d-flex justify-content-around w-100">
+								  	<p style="display: inline;">선호도</p>
+								    <label for="5-stars-pref" class="star-pref"  style="display: inline;" >★</label>
+								</div> 
+								 <div class=" d-flex justify-content-around w-100">
+								  	<p style="display: inline;">우선순위</p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★</label>
+								</div> 
+		                        <ul class="nav justify-content-end mt-3">
+		                            <li class="nav-item mx-1">
+		                               <button class="bg-white"  onclick="location.href='./EditList'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">수정</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white"   onclick="alert('삭제되었습니다.'); location.href='./Bucketlist'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">삭제</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white" onclick="location.href='./View'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">자세히</button>
+		                            </li>
+		                        </ul>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+				<div class="col-sm-4 pt-3">
+					<div class="card" style="width:370px; height:370px; text-align:center; vertical-align:middle; display:table-cell; background-image: url(./resources/assets/img/bucket3.png);">
+	                   <div class="align-middle text-center mt-3 w-100" style=" text-align:center; vertical-align:middle; display: inline-block;">
+	                        <h5 class="fw-bolder">애플워치 구매</h5>
+	                        <div align="left">
+	                        	<div align="left" class="mt-5 d-flex justify-content-around ">
+								  	<p class="text-start" style="display: inline; ">예상비용</p>
+								  	<p style="display: inline; " >700,000원</p>
+								</div> 
+								 <div align="left" class="d-flex justify-content-around w-100">
+								  	<p style="display: inline; ">필요도<p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★★</label>
+								</div> 
+								 <div class="d-flex justify-content-around w-100">
+								  	<p style="display: inline;">선호도</p>
+								    <label for="5-stars-pref" class="star-pref"  style="display: inline;" >★</label>
+								</div> 
+								 <div class=" d-flex justify-content-around w-100">
+								  	<p style="display: inline;">우선순위</p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★</label>
+								</div> 
+		                        <ul class="nav justify-content-end mt-3">
+		                            <li class="nav-item mx-1">
+		                               <button class="bg-white"  onclick="location.href='./EditList'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">수정</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white"   onclick="alert('삭제되었습니다.'); location.href='./Bucketlist'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">삭제</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white" onclick="location.href='./View'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">자세히</button>
+		                            </li>
+		                        </ul>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
 			</div>
-			<div class="col-sm-4 pt-3">
-				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">테니스 배우기</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">수정</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">삭제</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">자세히</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-			</div>
-			<div class="col-sm-4 pt-3">
-				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">애플워치 구매</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">수정</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">삭제</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">자세히</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-			</div>
-
-            <div class="col-sm-4 pt-3">
-				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">일본 여행</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">수정</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">삭제</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">자세히</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-			</div>
-			<div class="col-sm-4 pt-3">
-				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">부모님 여행</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">수정</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">삭제</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">자세히</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-			</div>
-			<div class="col-sm-4 pt-3">
-				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">첼로 배우기</h4>
-                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">수정</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">삭제</a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">자세히</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+			<div class="row">
+	            <div class="col-sm-4 pt-3">
+					<div class="card" style="width:370px; height:370px; text-align:center; vertical-align:middle; display:table-cell; background-image: url(./resources/assets/img/bucket4.png);">
+	                   <div class="align-middle text-center mt-3 w-100" style=" text-align:center; vertical-align:middle; display: inline-block;">
+	                        <h5 class="fw-bolder">일본 여행</h5>
+	                        <div align="left">
+	                        	<div align="left" class="mt-5 d-flex justify-content-around ">
+								  	<p class="text-start" style="display: inline; ">예상비용</p>
+								  	<p style="display: inline; " >700,000원</p>
+								</div> 
+								 <div align="left" class="d-flex justify-content-around w-100">
+								  	<p style="display: inline; ">필요도<p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★★</label>
+								</div> 
+								 <div class="d-flex justify-content-around w-100">
+								  	<p style="display: inline;">선호도</p>
+								    <label for="5-stars-pref" class="star-pref"  style="display: inline;" >★</label>
+								</div> 
+								 <div class=" d-flex justify-content-around w-100">
+								  	<p style="display: inline;">우선순위</p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★</label>
+								</div> 
+		                        <ul class="nav justify-content-end mt-3">
+		                            <li class="nav-item mx-1">
+		                               <button class="bg-white"  onclick="location.href='./EditList'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">수정</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white"   onclick="alert('삭제되었습니다.'); location.href='./Bucketlist'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">삭제</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white" onclick="location.href='./View'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">자세히</button>
+		                            </li>
+		                        </ul>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+				<div class="col-sm-4 pt-3">
+					<div class="card" style="width:370px; height:370px; text-align:center; vertical-align:middle; display:table-cell; background-image: url(./resources/assets/img/bucket5.png);">
+	                   <div class="align-middle text-center mt-3 w-100" style=" text-align:center; vertical-align:middle; display: inline-block;">
+	                        <h5 class="fw-bolder">부모님 여행</h5>
+	                        <div align="left">
+	                        	<div align="left" class="mt-5 d-flex justify-content-around ">
+								  	<p class="text-start" style="display: inline; ">예상비용</p>
+								  	<p style="display: inline; " >700,000원</p>
+								</div> 
+								 <div align="left" class="d-flex justify-content-around w-100">
+								  	<p style="display: inline; ">필요도<p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★★</label>
+								</div> 
+								 <div class="d-flex justify-content-around w-100">
+								  	<p style="display: inline;">선호도</p>
+								    <label for="5-stars-pref" class="star-pref"  style="display: inline;" >★</label>
+								</div> 
+								 <div class=" d-flex justify-content-around w-100">
+								  	<p style="display: inline;">우선순위</p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★</label>
+								</div> 
+		                        <ul class="nav justify-content-end mt-3">
+		                            <li class="nav-item mx-1">
+		                               <button class="bg-white"  onclick="location.href='./EditList'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">수정</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white"   onclick="alert('삭제되었습니다.'); location.href='./Bucketlist'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">삭제</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white" onclick="location.href='./View'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">자세히</button>
+		                            </li>
+		                        </ul>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+				<div class="col-sm-4 pt-3">
+					<div class="card" style="width:370px; height:370px; text-align:center; vertical-align:middle; display:table-cell; background-image: url(./resources/assets/img/bucket6.png);">
+	                   <div class="align-middle text-center mt-3 w-100" style=" text-align:center; vertical-align:middle; display: inline-block;">
+	                        <h5 class="fw-bolder">첼로 배우기</h5>
+	                        <div align="left">
+	                        	<div align="left" class="mt-5 d-flex justify-content-around ">
+								  	<p class="text-start" style="display: inline; ">예상비용</p>
+								  	<p style="display: inline; " >700,000원</p>
+								</div> 
+								 <div align="left" class="d-flex justify-content-around w-100">
+								  	<p style="display: inline; ">필요도<p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★★</label>
+								</div> 
+								 <div class="d-flex justify-content-around w-100">
+								  	<p style="display: inline;">선호도</p>
+								    <label for="5-stars-pref" class="star-pref"  style="display: inline;" >★</label>
+								</div> 
+								 <div class=" d-flex justify-content-around w-100">
+								  	<p style="display: inline;">우선순위</p>
+								  	<label for="5-stars-pref" class="star-pref"  style="display: inline;" >★★</label>
+								</div> 
+		                        <ul class="nav justify-content-end mt-3">
+		                            <li class="nav-item mx-1">
+		                               <button class="bg-white"  onclick="location.href='./EditList'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">수정</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white"   onclick="alert('삭제되었습니다.'); location.href='./Bucketlist'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">삭제</button>
+		                            </li>
+		                            <li class="nav-item mx-1">
+		                                <button class="bg-white" onclick="location.href='./View'" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">자세히</button>
+		                            </li>
+		                        </ul>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
 			</div>
 		</div>
-	</div>
 	
     <!-- FOOTER -->
 	<div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">

@@ -75,24 +75,4 @@ public class HomeController {
 	
 	}
 	
-//	@RequestMapping(value = "/addform", method = RequestMethod.POST)
-//	public String write() {
-//		return "redirect:list";
-//	}
-	
-//	@RequestMapping(value = "/editform", method = RequestMethod.POST)
-//	public String editform() {
-//		return "redirect:view";
-//	}
-
-
-//	@RequestMapping(value = "/editform", method = RequestMethod.GET)
-//	public void update() {
-//	}
-	
-//	@RequestMapping(value = "/delete", method = RequestMethod.GET)
-//	public String delete() {
-//		System.out.println("글 삭제 처리");
-//		return "redirect:/";
-//	}
 }
