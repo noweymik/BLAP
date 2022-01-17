@@ -32,12 +32,47 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
-		/*
-		 * <<<<<<< HEAD
-		 * 
-		 * =======
-		 * 
-		 * >>>>>>> branch 'master' of https://github.com/leehyelim0691/BLAP.git
-		 */		return "main";
+		return "Main";
 	}
+	
+	@RequestMapping(value = "/Bucketlist", method = RequestMethod.GET)
+	public void Bucketlist() {
+
+	}
+	
+	@RequestMapping(value = "/Budget", method = RequestMethod.GET)
+	public void Budget() {
+		
+	}
+	
+	@RequestMapping(value = "/Mypage", method = RequestMethod.GET)
+	public void Mypage() {
+	
+	}
+	
+	@RequestMapping(value = "/AddList", method = RequestMethod.GET)
+	public void AddList() {
+	
+	}
+	
+	@RequestMapping(value = "/EditList", method = RequestMethod.GET)
+	public void EditList() {
+	
+	}
+	
+	@RequestMapping(value = "/View", method = RequestMethod.GET)
+	public void View() {
+	
+	}
+	
+	@RequestMapping(value = "/ExpenditureStatistics", method = RequestMethod.GET)
+	public void ExpenditureStatistics() {
+	
+	}
+	
+	@RequestMapping(value = "/SignIn", method = RequestMethod.GET)
+	public void SignIn() {
+	
+	}
+	
 }
