@@ -33,7 +33,7 @@
 
 <body class="text-center">
 	<!-- HEADER -->
-	<nav class="navbar navbar-expand-sm bg-white navbar-light  border-bottom">
+	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
 	  <div class="container-fluid">
 	      <a href=".">
 	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
