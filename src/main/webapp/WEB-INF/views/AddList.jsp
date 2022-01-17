@@ -15,9 +15,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>New Bucket list</title>
     <style>
-        .star-rating input {
+        .star-rating input{
             display: none;
         }
+        
         
         .star-rating label {
             -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
@@ -105,6 +106,25 @@
             cursor: pointer;
             border-radius: 10%;
         }
+        button[type=submit] {
+            background-color: rgba(173, 172, 172, 1);
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+        button[type=reset] {
+            background-color: white;
+            border: 0.2px solid black;
+            padding: 4.8px 19.8px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10%;
+        } 
     </style>
 </head>
 <body>
@@ -118,10 +138,36 @@
             if(parseInt(document.getElementById('expense5').value)) document.getElementById('allexpense').value = parseInt(document.getElementById('allexpense').value) + parseInt(document.getElementById('expense5').value);
         }
     </script>
-    <nav>
-        <h3> BLAP ABOUT </h3>
+    
+    <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
+	  <div class="container-fluid">
+	  	 <a href=".">
+	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+	     </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+		   <ul class="navbar-nav">
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="about">ABOUT</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Bucketlist">BUCKET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Budget">BUDGET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Mypage">PROFILE</a>
+		      </li>
+		    </ul>
+		  </div>
+	  </div>
+	</nav>
+	
+	<br/>
         <!-- 여기는 nav부분~~ -->
-    </nav>
 
     <h3 style = 'text-align: center;'> NEW BUCKET LIST </h3><br>
     
@@ -253,8 +299,10 @@
     </div>
 </div>
 
-    <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
-    <input type="submit" value="등록" style="margin-left: 5%;" onclick="alert('등록되었습니다.');">
+   <!-- <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
+    <input type="submit" value="등록" style="margin-left: 5%;" onclick="alert('등록되었습니다.');">  -->
+    <button type="reset"  style="margin-left: 43%; margin-top: 5px;" onclick="location.href='./Bucketlist'">취소</button>
+    <button type="submit"  style="margin-left: 5%;" onclick="alert('등록되었습니다.'); location.href='./Bucketlist'">등록</button>
 </form>
 
 <footer>

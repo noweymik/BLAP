@@ -32,7 +32,7 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
-		return "Main";
+		return "main";
 	}
 	
 	@RequestMapping(value = "/Bucketlist", method = RequestMethod.GET)

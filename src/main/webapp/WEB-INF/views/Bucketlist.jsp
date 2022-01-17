@@ -12,10 +12,6 @@
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>
-   .fakeimg {
-       height: 40px;
-       background: #aaa;
-   }
    .star-pref{
    		color : #FFCC16;
    }

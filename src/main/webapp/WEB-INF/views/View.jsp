@@ -106,10 +106,34 @@
             if(parseInt(document.getElementById('expense5').value)) document.getElementById('allexpense').value = parseInt(document.getElementById('allexpense').value) + parseInt(document.getElementById('expense5').value);
         }
     </script>
-    <nav>
-        <h3> BLAP ABOUT </h3>
-        <!-- 여기는 nav부분~~ -->
-    </nav>
+    
+	<!-- head navbar -->
+	    <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom ">
+	  <div class="container-fluid">
+	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+		   <ul class="navbar-nav">
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/about">ABOUT</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/bucket">BUCKET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/budget">BUDGET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="/user">PROFILE</a>
+		      </li>
+		    </ul>
+		  </div>
+	  </div>
+	</nav>
+	
+	<br/>
 
     <h3 style = 'text-align: center;'> 제목 변수명 </h3><br>  
     <!-- <%-- <%= u.getUserid()%> --%> -->
@@ -235,12 +259,14 @@
 <!-- <input type="button" value="돌아가기" style="margin-left: 50%;"> -->
 <br><br><br>
 <a href ="#" style="margin-left: 48%; ">돌아가기</a>
-<footer>
-    <div style="float:right;">
-        <span><a href="#">이용약관</a></span>
-        <span> <a href="#">도움말</a></span>
-    </div>
-</footer>
+
+<!— footer —>
+<div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
+	<p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>
+	<p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
+</div>
+
+
 </body>
 </html>
 </html>
