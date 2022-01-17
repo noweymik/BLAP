@@ -108,7 +108,7 @@
     </script>
     
 	<!-- head navbar -->
-	    <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom ">
+	    <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom ">
 	  <div class="container-fluid">
 	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -133,7 +133,7 @@
 	  </div>
 	</nav>
 	
-	<br/>
+	<br>
 
     <h3 style = 'text-align: center;'> 제목 변수명 </h3><br>  
     <!-- <%-- <%= u.getUserid()%> --%> -->

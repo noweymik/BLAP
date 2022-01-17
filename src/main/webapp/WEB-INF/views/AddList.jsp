@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -15,10 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>New Bucket list</title>
     <style>
-        .star-rating input{
+        .star-rating input {
             display: none;
         }
-        
         
         .star-rating label {
             -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
@@ -106,94 +104,107 @@
             cursor: pointer;
             border-radius: 10%;
         }
-        button[type=submit] {
-            background-color: rgba(173, 172, 172, 1);
-            border: none;
-            color: white;
-            padding: 5px 20px;
-            text-decoration: none;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 10%;
-        }
-        button[type=reset] {
-            background-color: white;
-            border: 0.2px solid black;
-            padding: 4.8px 19.8px;
-            text-decoration: none;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 10%;
-        } 
+        
     </style>
 </head>
 <body>
     <script language="javascript"> 
         function add() {
             document.getElementById('allexpense').value = 0;
-            if(parseInt(document.getElementById('expense1').value)) document.getElementById('allexpense').value = parseInt(document.getElementById('allexpense').value) + parseInt(document.getElementById('expense1').value);
-            if(parseInt(document.getElementById('expense2').value)) document.getElementById('allexpense').value = parseInt(document.getElementById('allexpense').value) + parseInt(document.getElementById('expense2').value);
-            if(parseInt(document.getElementById('expense3').value)) document.getElementById('allexpense').value = parseInt(document.getElementById('allexpense').value) + parseInt(document.getElementById('expense3').value);
-            if(parseInt(document.getElementById('expense4').value)) document.getElementById('allexpense').value = parseInt(document.getElementById('allexpense').value) + parseInt(document.getElementById('expense4').value);
-            if(parseInt(document.getElementById('expense5').value)) document.getElementById('allexpense').value = parseInt(document.getElementById('allexpense').value) + parseInt(document.getElementById('expense5').value);
+            
+            for(i=1; i<arrInput.length; i++) {
+                var id = 'expense'+i;
+                if(parseInt(document.getElementById(id).value)) document.getElementById('allexpense').value = parseInt(document.getElementById('allexpense').value) + parseInt(document.getElementById(id).value) ;
+            } 
+        }
+
+        var arrInput = new Array(1);
+        var arrInputName = new Array(1);
+        var arrInputValue = new Array(1);
+        
+        function addInput() {
+            // document.getElementById('test').innerHTML = arrInput.length;
+            arrInput.push(arrInput.length);
+            arrInputName.push("");
+            arrInputValue.push("");            
+            display();
+            // add();
+        }
+        
+        function display() {
+            document.getElementById('expenseData').innerHTML="";
+            for (intI=1; intI<arrInput.length; intI++) {
+                document.getElementById('expenseData').innerHTML += createInput(arrInput[intI], arrInputName[intI], arrInputValue[intI]);
+            }
+        }
+        
+        function saveValue(intId,strValue) {
+            arrInputValue[intId]=strValue;
+        }  
+
+        function saveName(intId,strName) {
+            arrInputName[intId]=strName;
+        }  
+        
+        function createInput(id,name,value) {
+            return "<div class='col' style='padding: 10px 10px;'>"+id+"</div><div class='col' style='padding: 10px 10px;'>"+
+                "<input class='item' type='text' onChange='saveName('"+ id +"',this.value)' value='"+ name +"'/></div> "+
+                "<div class='col' style='padding: 10px 10px;'>&nbsp;&nbsp;<input type='text' class='expense' id='expense"+ id +
+                "'  onkeyup='add()' style='width: 78%; '; onChange='saveValue('"+ id +"',this.value)' value='"+ value +"'/> 원</div><br><br>";    
+            
         }
     </script>
-    
+
+
     <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
-	  <div class="container-fluid">
-	  	 <a href=".">
-	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
-	     </a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
-		   <ul class="navbar-nav">
-		      <li class="nav-item me-5">
-		        <a class="nav-link" href="about">ABOUT</a>
-		      </li>
-		      <li class="nav-item me-5">
-		        <a class="nav-link" href="Bucketlist">BUCKET</a>
-		      </li>
-		      <li class="nav-item me-5">
-		        <a class="nav-link" href="Budget">BUDGET</a>
-		      </li>
-		      <li class="nav-item me-5">
-		        <a class="nav-link" href="Mypage">PROFILE</a>
-		      </li>
-		    </ul>
-		  </div>
-	  </div>
-	</nav>
-	
-	<br/>
-        <!-- 여기는 nav부분~~ -->
+        <div class="container-fluid">
+             <a href=".">
+            <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+             <ul class="navbar-nav">
+                <li class="nav-item me-5">
+                  <a class="nav-link" href="about">ABOUT</a>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link" href="Bucketlist">BUCKET</a>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link" href="Budget">BUDGET</a>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link" href="Mypage">PROFILE</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+      
+      <br>
+  
 
     <h3 style = 'text-align: center;'> NEW BUCKET LIST </h3><br>
     
     <form method="post" enctype="multipart/form-data" action="#"></form>
     <!-- 왼쪽 정보 적는 부분 (예상 비용 제외 부분) -->
-    <!-- <div id = "infoWrite"> -->
-    
+
     <div id="info-1">
             <div class="title"><span>제목</span>
             <div class="vl"></div></div>
-            <input type="text" name="title" style="margin: 1% 0 0 3.5%; padding: 1px; width: 65%;" />
-        <br><br><br>
-        <div class="title"><span>카테고리</span>
+            <input type="text" name="name" style="margin: 1% 0 0 3.5%; padding: 1px; width: 65%;" />
+            <br><br><br>
+
+            <div class="title"><span>해시태그</span>
             <div class="vl"></div></div>
-                <div style="margin: 100px 0 0px 3.5%; display: inline;">
-                    <input type="checkbox" id="choice1" name="type" value="여행"> 여행&nbsp;&nbsp;
-                    <input type="checkbox" id="choice2" name="type" value="운동"> 운동&nbsp;&nbsp;
-                    <input type="checkbox" id="choice3" name="type" value="음식" > 음식&nbsp;&nbsp;
-                    <input type="checkbox" id="choice4" name="type" value="취미" > 취미&nbsp;&nbsp;
-                    <input type="checkbox" id="choice5" name="type" value="구매" > 구매&nbsp;&nbsp;
-                    <input type="checkbox" id="choice6" name="type" value="기타" > 기타<br>
-                </div>
-                <br>
-                <div class="title"><span>목표일</span>
+            <input type="text" name="hashtag" style="margin: 1% 0 0 3.5%; padding: 1px; width: 65%;" />
+            <br><br><br>
+
+            <div class="title"><span>목표일</span>
             <div class="vl"></div></div>
-            <input type="date" style="margin: 3% 0 0px 3.5%; padding: 1px; width: 65%;" />
+            <input type="date" style="margin: 1% 0 0px 3.5%; padding: 1px; width: 65%;" />
             <br><br><br>
 
             <div class="title"><span>필요도</span>
@@ -247,7 +258,7 @@
             <div class="vl"></div></div>
             <div class="file-button">
                 <label for="photo">
-                    <img src="/resurces/assets/img/img.png">
+                    <img src="img.png">
                 </label>
             </div>
             <input type="file" id="photo" name="photo"style="margin: 3% 0 0px 3.5%; padding: 1px; padding: 2px; width: 300px;" accept="image/*"/></td>
@@ -259,54 +270,44 @@
 </div>
 <!-- 오른쪽 정보 적는 부분 (예상 비용) -->
 <div id="info-2">
-    
+
     <p>예상 비용</p>
-    <div class="row row-cols-3" style="padding: 10px 8px; background-color: rgba(245, 245, 245, 1); text-align:center; ">
+    <div class='row row-cols-3' id="expense" style='border: black 0.5px solid; border-bottom: none; padding: 5px 8px; background-color: rgba(245, 245, 245, 1);'>
         
         <div class="col"></div>
         <div class="col">항목</div>
         <div class="col">예상지출액</div>
-        <br><br>
+        <br>
+
+    </div>
         
-        <div class="index">1</div>  
+        <div class="row row-cols-3" id="expenseData" style='border: black 1px solid;  background-color: rgba(245, 245, 245, 1);'>
+
+        <!-- <div class="col" id="indexExample">1</div>  
         <div class="col"><input class="item" type="text"/></div>
         <div class="col">&nbsp;&nbsp;<input class="expense" id="expense1" type="text" onkeyup='add()' style="width: 78%;"/> 원</div>
-        <br><br>
-
-        <div class="index">2</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense2" type="text" onkeyup='add()'style="width: 78%;"/> 원</div>
-        <br><br>
-
-        <div class="index">3</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense3" type="text" onkeyup='add()'style="width: 78%;"/> 원</div>
-        <br><br>
-
-        <div class="index">4</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense4" type="text" onkeyup='add()'style="width: 78%;"/> 원</div>
-        <br><br>
-        <div class="index">5</div>  
-        <div class="col"><input class="item" type="text"/></div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="expense5" type="text" onkeyup='add()'style="width: 78%;"/> 원</div>
+        <br><br> -->
         
-        <br><br>
+        </div>
+    <div class="row row-cols-3" style='border: black 0.5px solid; padding: 5px 8px; border-top: none; background-color: rgba(245, 245, 245, 1);'>
         <div class="col"></div>  
         <div class="col">예상지출총액</div>
-        <div class="col">&nbsp;&nbsp;<input class="expense" id="allexpense" type="text" style="width: 78%;"/><span> 원</span></div>
-        
+        <div class="col">&nbsp;&nbsp;&nbsp;<input id="allexpense" type="text" style="width: 78%; text-align: center;"/><span> 원</span></div>
+        <input type='button' id = "addbutton" value='+' onclick='addInput()' />
     </div>
+
+
 </div>
 
 
-    <button type="reset"  style="margin-left: 43%; margin-top: 5px;" onclick="location.href='./Bucketlist'">취소</button>
-    <button type="submit"  style="margin-left: 5%;" onclick="alert('등록되었습니다.'); location.href='./Bucketlist'">등록</button>
+    <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
+    <input type="submit" value="등록" style="margin-left: 5%;" onclick="alert('등록되었습니다.');">
+</form>
 
 <footer>
-    <div style="float:right;">
-        <span><a href="#">이용약관</a></span>
-        <span> <a href="#">도움말</a></span>
+    <div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
+        <p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>
+        <p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
     </div>
 </footer>
 </body>

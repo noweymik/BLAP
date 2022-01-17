@@ -112,7 +112,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
+   <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
 	  <div class="container-fluid">
 	  	 <a href=".">
 	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
@@ -163,7 +163,6 @@
                <img src="./resources/assets/img/hobby.png" class="categoryimg"><br>
                HOBBY
             </button>
-            <!-- <button class="btn btn-success my-4 p-2 float-end p-2" onclick="location.href='ExpenditureStatistics'">통계</button> -->
 				<button class="btn my-4 p-2 float-end p-2" type="button" id ="statistics" onclick=" location.href='./ExpenditureStatistics'">통계</button>
          </span>
       </form>
@@ -215,7 +214,7 @@
                   <br>
                   <canvas id="verticalChart" style="weight:60%; height:100%; padding: 10px;"></canvas>
                </div>
-               <!-- <div class="container-fluid col-sm-7 row" style="font-size:15px;text-align:right;">
+               <div class="container-fluid col-sm-7 row" style="font-size:15px;text-align:right;">
                   <div class="col-sm-1 p-0">
                      <div class="col-sm-12" style="margin-top:40%; padding-bottom:100%; border-radius:50%;background-color:#F4B5B5;"></div>
                      <div class="col-sm-12" style="margin-top:40%; padding-bottom:100%; border-radius:50%;background-color:#F9D7D7;"></div>
@@ -233,7 +232,7 @@
                      <div class="col-sm-12" style="margin-top:8%; min-width:80px; margin-left:min(15px,1%)">1,140,000<div>
                      <div class="col-sm-12" style="margin-top:8%; min-width:80px; margin-left:min(15px,1%); color:red">-1,028,390</div>
                   </div>
-               </div> -->
+               </div>
             </div>
          </div>
       </div>
@@ -275,7 +274,12 @@
                   </table>
                </div>
             </div>
-            <div class="col-sm-12"><button class="btn float-end border" id="budget_popup_confirm">확인</button></div>
+            <div class="row mb-3">
+            	<div class="col d-flex justify-content-end" >
+            		<button class="btn  border  justify-content-end me-4" id="budget_popup_confirm">수정</button>
+            		<button class="btn border  justify-content-end" id="budget_popup_confirm">확인</button>	
+            	</div>
+            </div>
          </div>
       </div>
    </div>

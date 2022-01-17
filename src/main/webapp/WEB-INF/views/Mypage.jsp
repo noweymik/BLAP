@@ -106,22 +106,21 @@
 	  </div>
 	</nav>
 	
-	<br/>
+	<br>
     
-	<!-- content -->
-		<div class="container" style = "font-size:18px;">
-		<div class = "col-1" >
-		</div>
-	    	<div class = "row" sytle="text-align: center;">
-				<div class = "col-5 mt-3" >
-				
-				<!-- 프로필 -->
-				
-					<div class = "ml-3" style="padding-left: 37px; padding-bottom: 5px;"><img src="./resources/assets/img/user.png" height="70" width="70"></div>
-					<div  class = "row mt-5" style="padding-left: 58px; display:inline; padding-top: 5px;"> 홍길동
-						<a href="SignIn" style="text-decoration-line : none;"><small class = "text-muted"> 로그아웃</small></a>
+	    	<div class = "row d-flex justify-content-start ms-5 me-5" style="text-align: center;">
+				<div class = "col-5 mt-3 d-flex justify-content-start">		
+					<div class = "ml-3" style="padding-left: 37px; padding-bottom: 5px;">
+						<img src="./resources/assets/img/user.png" height="70" width="70">
+						<div class="mt-3 ms-2"> 홍길동
+							<a href="SignIn" style="text-decoration-line : none;">
+								<small class = "text-muted"> 로그아웃</small>
+							</a>
+						<div class = "row d-flex justify-content-center" style="text-align:center;" >2000000@gmail.com</div>
 					</div>
-					<div class = "row" style="text-align:center; padding-top: 5px" >2000000@gmail.com</div>
+					</div>
+					
+					
 				</div>	
 				
 				<!-- 잔여금액 -->
@@ -159,7 +158,7 @@
 						</div>
 						<div class = "row">
 							<div class = "col-3"></div>
-							<div class = "col-3 " style = "font-size: 15px; text-align:center; color:#8B8B8F">680,000원</div>
+							<div class = "col-3 " style = "font-size: 15px; text-align:center; color:#8B8B8F">380,000원</div>
 						</div>
 						
 						<div class = "row mt-2">
@@ -193,32 +192,14 @@
 						<div class = "row">
 							<div class = "col-3"></div>
 							<div class = "col-3 " style = "font-size: 15px; text-align:center; color:#8B8B8F">360,000원</div>
-						</div>
-					
-					<!-- 카테고리 -->
-					<div class = "row mt-5">
-					카테고리
-					<!-- 카테고리 더하기 빼기 버튼-->
-					<div class="col-1" style = "padding-left:35px" ><button id="cate_p_popup_open_btn"><img src="./resources/assets/img/카테고리 더하기.png" height="20" width="20" ></button></div>
-					<div class="col-1" ><button id="cate_m_popup_open_btn"><img src="resources/assets/img/카테고리 빼기.png" height="20" width="20" ></button></div>
-					
-					<!-- 카테고리 각 항목 버튼-->
-					<div class="col-1" style="margin-left:30px; font-size:14; color:#8B8B8F "><img src="./resources/assets/img/여행.png" height="50" width="50"><br>    여행</div>
-					<div class="col-1" style="margin-left:15px; font-size:14; color:#8B8B8F"><img src="./resources/assets/img/음식.png" height="50" width="50">  음식</div>
-					<div class="col-1 " style="margin-left:15px; font-size:14; color:#8B8B8F"><img src="./resources/assets/img/쇼핑.png" height="50" width="50">  쇼핑</div>
-					<div class="col-1" style="margin-left:15px; font-size:14; color:#8B8B8F" ><img src="./resources/assets/img/기타.png" height="50" width="50">  기타</div>
-					</div>
-					
-				</div>	
-				
-				
+						</div>				
+				</div>		
 			</div>
 			
-					<!-- footer -->
-<!-- <div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
-	<p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>
-	<p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
-</div> -->
+			<div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
+				<p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>
+				<p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
+			</div>
 
 
 			<!-- 금액추가모달 -->
@@ -229,36 +210,10 @@
             <div class="col-4" style = "font-size:15px;" >추가할 금액</div>
             <div class="col-3" style = "font-size: 16px; border-radius:3px;" ><input type = "text"></div>
             </div>
-            <!-- <a class="finish"><img src="resources/assets/img/완료버튼 이미지.png" ></a> -->
             <button class="finish" style="border-radius:10px; border: 1px solid #DDDDDD; width:60px; height:30px; font-size:14px">완료</button>
             <a class="modal_close_btn" style = "font-size 25px; text-align:center;  text-decoration-line: none; color : black">x</a>
-<!--             <a class="modal_close_btn"><i class="fas fa-times "></i></a>-->
         </div>
         
-        <!-- 카테고리추가모달 -->
-			 <div id="cate_p_modal">
-			 <div style = "font-size: 18px; text-align:center; ">카테고리 추가</div>
-            	
-            <div class = "row mt-4 mb-4">
-            <div class="col" style = "font-size:14px;" >카테고리 명</div>
-            <div class="col" style = "font-size: 14px;" ><input type = "text"></div>
-            </div>
-            <a class="finish"><img src="resources/assets/img/완료버튼 이미지.png" ></a>
-            <a class="modal_close_btn" style = "font-size 14px; text-align:center; ">x</a>
-        </div>
-        
-        <!-- 카테고리제거모달 -->
-			 <div id="cate_m_modal">
-			 <div style = "font-size: 18px; text-align:center; ">카테고리 삭제</div>
-            	
-            <div class = "row mt-4 mb-4">
-            <div class="col" style = "font-size:14px;" >카테고리 명</div>
-            <div class="col" style = "font-size: 14px;" ><input type = "text"></div>
-            </div>
-            <a class="finish"><img src="./resources/assets/img/완료버튼 이미지.png" ></a>
-            <a class="modal_close_btn" style = "font-size 14px; text-align:center; ">x</a>
-        </div>
-		</div>
 		
 
 
@@ -336,11 +291,9 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!— Option 2: Separate Popper and Bootstrap JS —>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    —>
   </body>
 </html>
 </html>

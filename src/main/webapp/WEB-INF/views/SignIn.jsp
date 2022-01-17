@@ -86,8 +86,7 @@
 			
 			<button class="w-100 btn btn-lg" style="background-color:#A3BBAD; color:white" type="submit">로그인</button>
 			<button class="w-100 btn btn-lg mt-3" style="background-color:white; color:#A3BBAD; border:1px solid #A3BBAD" type="submit">회원가입</button>
-<!-- 			<button class="w-100 btn btn-lg background-color:#A3BBAD; color:white" type="submit">로그인</button>
- -->			<!-- <button class="w-100 btn btn-lg btn-outline-primary mt-3" type="submit">회원가입</button> -->
+			
 			<p class="mt-5 mb-3 text-muted">&copy; 본 웹사이트는 실습을 위해 만들어졌습니다.</p>
 		</form>
 	</main>
