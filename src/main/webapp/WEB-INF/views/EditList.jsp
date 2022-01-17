@@ -105,6 +105,25 @@
             cursor: pointer;
             border-radius: 10%;
         }
+        button[type=submit] {
+            background-color: rgba(173, 172, 172, 1);
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+        button[type=reset] {
+            background-color: white;
+            border: 0.2px solid black;
+            padding: 4.8px 19.8px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10%;
+        }
     </style>
 </head>
 <body>
@@ -277,10 +296,12 @@
     </div>
 </div>
 
-    <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
-    <input type="submit" value="수정" style="margin-left: 5%;" onclick="alert('수정되었습니다.');">
-</form>
-
+    <!-- <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
+    <input type="submit" value="수정" style="margin-left: 5%;" onclick="alert('수정되었습니다.');"> -->
+    <button type="reset"  style="margin-left: 43%; margin-top: 5px;" onclick="location.href='./Bucketlist'">취소</button>
+    <button type="submit"  style="margin-left: 5%;" onclick="alert('수정되었습니다.'); location.href='./Bucketlist'">수정</button>
+<!-- </form>
+ -->
 <!-- footer -->
 <div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
 	<p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>

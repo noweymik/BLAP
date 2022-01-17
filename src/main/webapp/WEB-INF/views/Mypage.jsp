@@ -79,30 +79,34 @@
 	      
 	      <!-- style="border: 3px solid purple" -->
 	      
-	      <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
-  <div class="container-fluid">
-      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
-	   <ul class="navbar-nav">
-	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/about">ABOUT</a>
-	      </li>
-	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/bucket">BUCKET</a>
-	      </li>
-	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/budget">BUDGET</a>
-	      </li>
-	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/user">PROFILE</a>
-	      </li>
-	    </ul>
+	    <nav class="navbar navbar-expand-sm bg-white navbar-light border-bottom">
+	  <div class="container-fluid">
+	  	 <a href=".">
+	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+	     </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+		   <ul class="navbar-nav">
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="about">ABOUT</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Bucketlist">BUCKET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Budget">BUDGET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Mypage">PROFILE</a>
+		      </li>
+		    </ul>
+		  </div>
 	  </div>
-  </div>
-</nav>
+	</nav>
+	
+	<br/>
     
 	<!-- content -->
 		<div class="container" style = "font-size:18px;">
@@ -114,7 +118,9 @@
 				<!-- 프로필 -->
 				
 					<div class = "ml-3" style="padding-left: 37px; padding-bottom: 5px;"><img src="resources/assets/img/user.png" height="70" width="70"></div>
-					<div  class = "row mt-5" style="padding-left: 58px; display:inline; padding-top: 5px;"> 홍길동<small class = "text-muted"> 로그아웃</small></div>
+					<div  class = "row mt-5" style="padding-left: 58px; display:inline; padding-top: 5px;"> 홍길동
+						<a href="SignIn" style="text-decoration-line : none;"><small class = "text-muted"> 로그아웃</small></a>
+					</div>
 					<div class = "row" style="text-align:center; padding-top: 5px" >2000000@gmail.com</div>
 				</div>	
 				

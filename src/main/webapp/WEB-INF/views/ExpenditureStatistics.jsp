@@ -13,6 +13,21 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link href="./resources/assets/css/statistics.css" rel="stylesheet">
+
+<style>
+	#budget{
+		color : #A3BBAD;
+		background-color : white;
+		border : 1px solid #A3BBAD;
+		border-radius : 5px;
+	}
+	#budget:hover{
+		color : white;
+		background-color :  #A3BBAD;
+		border : 1px solid white;
+		border-radius : 5px;
+	}
+</style>
 </head>
 
 <body class="pt-5">
@@ -20,30 +35,34 @@
 	<main>
 		<div class="container">
 			<!-- HEADER -->
-			<nav
-				class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
-				<div class="container-fluid">
-					<img src="./resources/assets/img/logo.png" alt="blap Logo"
-						style="width: 80px; height: 55px">
-					<button class="navbar-toggler" type="button"
-						data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse d-flex justify-content-center"
-						id="collapsibleNavbar">
-						<ul class="navbar-nav">
-							<li class="nav-item me-5"><a class="nav-link" href="/about">ABOUT</a>
-							</li>
-							<li class="nav-item me-5"><a class="nav-link" href="/bucket">BUCKET</a>
-							</li>
-							<li class="nav-item me-5"><a class="nav-link" href="/budget">BUDGET</a>
-							</li>
-							<li class="nav-item me-5"><a class="nav-link" href="/user">PROFILE</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+			 <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
+	  <div class="container-fluid">
+	  	 <a href=".">
+	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+	     </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+		   <ul class="navbar-nav">
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="about">ABOUT</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Bucketlist">BUCKET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Budget">BUDGET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Mypage">PROFILE</a>
+		      </li>
+		    </ul>
+		  </div>
+	  </div>
+	</nav>
+	
+	<br/>
 
 			<div class="p-5 mb-auto">
 				<div class="container-fluid">
@@ -85,7 +104,7 @@
 							<div class="col-sm-6">
 								<div>
 									<div class="container-fluid pt-3 pe-5 text-end">
-										<button type="button" class="btn btn-outline-primary">목록</button>
+										<button id="budget" type="button" class="btn btn-outline-primary" onclick=" location.href='./Budget'">목록</button>
 									</div>
 								</div>
 							</div>

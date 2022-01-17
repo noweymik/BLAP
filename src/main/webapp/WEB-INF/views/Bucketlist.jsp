@@ -22,23 +22,25 @@
     <!-- HEADER -->
 	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
   <div class="container-fluid">
+  	 <a href=".">
       <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+     </a>
 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
 	   <ul class="navbar-nav">
 	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/about">ABOUT</a>
+	        <a class="nav-link" href="about">ABOUT</a>
 	      </li>
 	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/bucket">BUCKET</a>
+	        <a class="nav-link" href="Bucketlist">BUCKET</a>
 	      </li>
 	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/budget">BUDGET</a>
+	        <a class="nav-link" href="Budget">BUDGET</a>
 	      </li>
 	      <li class="nav-item me-5">
-	        <a class="nav-link" href="/user">PROFILE</a>
+	        <a class="nav-link" href="Mypage">PROFILE</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -88,7 +90,7 @@
             <div class="container-fluid pt-3 border bg-white text-dark">
                 <ul class="nav flex-column">
                     <li class="nav-item text-end">
-                        <button type="button" class="btn btn-outline-white btn-sm text-dark">
+                        <button  onclick="location.href='./AddList'" type="button" class="btn btn-outline-white btn-sm text-dark">
                             추가하기
                         </button>
                     </li>
@@ -170,13 +172,13 @@
                         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                         <ul class="nav justify-content-end">
                             <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">수정</a>
+                                <button onclick="location.href='./EditList'" class="btn btn-dark">수정</button>
                             </li>
                             <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">삭제</a>
+                                <button href="#" class="btn btn-dark">삭제</button>
                             </li>
                             <li class="nav-item mx-1">
-                                <a href="#" class="btn btn-dark">자세히</a>
+                                <button href="#" class="btn btn-dark">자세히</button>
                             </li>
                         </ul>
                     </div>
@@ -285,14 +287,11 @@
 			</div>
 		</div>
 	</div>
+	
     <!-- FOOTER -->
-    <div class="mt-5 p-4 bg-dark text-white text-center">
-        <button type="button" class="btn btn-outline-dark text-light">
-            <p class="fs-6">이용약관</p>
-        </button>
-        <button type="button" class="btn btn-outline-dark text-light">
-            <p class="fs-6">도움말</p>
-        </button>
-    </div>
+	<div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
+		<p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>
+		<p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
+	</div>
 </body>
 </html>
