@@ -18,8 +18,9 @@
    }
 </style>
 </head>
-<body class="pt-5">
+<body>
     <!-- HEADER -->
+<<<<<<< HEAD
 	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
   <div class="container-fluid">
   	 <a href=".">
@@ -48,6 +49,43 @@
 </nav>
 
 <br>
+=======
+	<div class="container-fluid pt-3 border bg-white text-dark text-center">
+        <div class="row">
+            <div class="col-sm-2 text-start">
+                <button type="button" class="btn btn-outline-white text-dark">
+                    <div class="fakeimg">Fake Image</div>
+                </button>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-outline-white text-dark">
+                            <h3> ABOUT </h3>
+                        </button>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-outline-white text-dark">
+                            <h3> BUCKET </h3>
+                        </button>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-outline-white text-dark">
+                            <h3> BUDGET </h3>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2 text-end">
+                <button type="button" class="btn btn-outline-white text-dark">
+                    <h3> PROFILE </h3>
+                </button>
+            </div>
+        </div>
+	</div>
+>>>>>>> branch 'master' of https://github.com/leehyelim0691/BLAP.git
     <!-- MAIN -->
     <div class="row">
         <!-- CATEGORY -->
@@ -166,7 +204,7 @@
 		<div class="row">
 			<div class="col-sm-4 pt-3">
 				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="./resources/assets/img/unnamed.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">제주도 여행</h4>
                         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
@@ -186,7 +224,7 @@
 			</div>
 			<div class="col-sm-4 pt-3">
 				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="./resources/assets/img/unnamed.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">테니스 배우기</h4>
                         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
@@ -206,7 +244,7 @@
 			</div>
 			<div class="col-sm-4 pt-3">
 				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="./resources/assets/img/unnamed.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">애플워치 구매</h4>
                         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
@@ -227,7 +265,7 @@
 
             <div class="col-sm-4 pt-3">
 				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="./resources/assets/img/unnamed.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">일본 여행</h4>
                         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
@@ -247,7 +285,7 @@
 			</div>
 			<div class="col-sm-4 pt-3">
 				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="./resources/assets/img/unnamed.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">부모님 여행</h4>
                         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
@@ -267,7 +305,7 @@
 			</div>
 			<div class="col-sm-4 pt-3">
 				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="./resources/assets/img/unnamed.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="unnamed.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">첼로 배우기</h4>
                         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
