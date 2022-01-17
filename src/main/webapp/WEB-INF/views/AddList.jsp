@@ -261,7 +261,7 @@
 <div id="info-2">
     
     <p>예상 비용</p>
-    <div class="row row-cols-3" style="border: black 1px solid; padding: 10px 8px; background-color: rgba(245, 245, 245, 1);">
+    <div class="row row-cols-3" style="padding: 10px 8px; background-color: rgba(245, 245, 245, 1); text-align:center; ">
         
         <div class="col"></div>
         <div class="col">항목</div>
@@ -299,11 +299,9 @@
     </div>
 </div>
 
-    <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
-    <input type="submit" value="등록" style="margin-left: 5%;" onclick="alert('등록되었습니다.');">  —>
+
     <button type="reset"  style="margin-left: 43%; margin-top: 5px;" onclick="location.href='./Bucketlist'">취소</button>
     <button type="submit"  style="margin-left: 5%;" onclick="alert('등록되었습니다.'); location.href='./Bucketlist'">등록</button>
-</form>
 
 <footer>
     <div style="float:right;">
