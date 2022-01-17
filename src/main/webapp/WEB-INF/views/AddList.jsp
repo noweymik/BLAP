@@ -299,8 +299,8 @@
     </div>
 </div>
 
-   <!-- <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
-    <input type="submit" value="등록" style="margin-left: 5%;" onclick="alert('등록되었습니다.');">  -->
+   <!— <input type="reset" value="취소" style="margin-left: 43%; margin-top: 5px;" onclick="alert('취소되었습니다.');">
+    <input type="submit" value="등록" style="margin-left: 5%;" onclick="alert('등록되었습니다.');">  —>
     <button type="reset"  style="margin-left: 43%; margin-top: 5px;" onclick="location.href='./Bucketlist'">취소</button>
     <button type="submit"  style="margin-left: 5%;" onclick="alert('등록되었습니다.'); location.href='./Bucketlist'">등록</button>
 </form>

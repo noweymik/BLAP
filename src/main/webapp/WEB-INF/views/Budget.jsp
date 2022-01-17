@@ -139,7 +139,6 @@
 	  </div>
 	</nav>
 
-
    <br>
    <div class="container" style="font-size:18px;">
       <form class="form-inline my-lg-0">
