@@ -258,9 +258,9 @@
 
 <!-- <input type="button" value="돌아가기" style="margin-left: 50%;"> -->
 <br><br><br>
-<a href ="#" style="margin-left: 48%; ">돌아가기</a>
+<a href ="Bucketlist" style="margin-left: 48%; ">돌아가기</a>
 
-<!— footer —>
+
 <div class="mt-4 p-3 bg-secondary text-white text-end" style="margin-bottom:0; background-color:#C1DDD3 !important; height:100px">
 	<p class=" pt-5" style="display: inline-block; font-size:13px">이용약관</p>
 	<p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
