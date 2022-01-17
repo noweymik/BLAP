@@ -139,9 +139,11 @@
     </script>
     
     <!-- head navbar -->
-    <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom ">
+    <nav class="navbar navbar-expand-sm bg-white navbar-light  border-bottom">
 	  <div class="container-fluid">
+	      <a href=".">
 	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+	     </a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -151,20 +153,20 @@
 		        <a class="nav-link" href="/about">ABOUT</a>
 		      </li>
 		      <li class="nav-item me-5">
-		        <a class="nav-link" href="/bucket">BUCKET</a>
+		        <a class="nav-link" href="Bucketlist">BUCKET</a>
 		      </li>
 		      <li class="nav-item me-5">
-		        <a class="nav-link" href="/budget">BUDGET</a>
+		        <a class="nav-link" href="Budget">BUDGET</a>
 		      </li>
 		      <li class="nav-item me-5">
-		        <a class="nav-link" href="/user">PROFILE</a>
+		        <a class="nav-link" href="Mypage">PROFILE</a>
 		      </li>
 		    </ul>
 		  </div>
 	  </div>
 	</nav>
 	
-	<br/>
+	<br>
 
     <h3 style = 'text-align: center;'> EDIT MY BUCKET </h3><br>
     
