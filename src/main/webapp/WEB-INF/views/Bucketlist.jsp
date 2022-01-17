@@ -28,40 +28,40 @@
 <body class="pt-5">
     <!-- HEADER -->
 	<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top border-bottom">
-  <div class="container-fluid">
-  	 <a href=".">
-      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
-     </a>
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
-	   <ul class="navbar-nav">
-	      <li class="nav-item me-5">
-	        <a class="nav-link" href="about">ABOUT</a>
-	      </li>
-	      <li class="nav-item me-5">
-	        <a class="nav-link" href="Bucketlist">BUCKET</a>
-	      </li>
-	      <li class="nav-item me-5">
-	        <a class="nav-link" href="Budget">BUDGET</a>
-	      </li>
-	      <li class="nav-item me-5">
-	        <a class="nav-link" href="Mypage">PROFILE</a>
-	      </li>
-	    </ul>
+	  <div class="container-fluid">
+	  	 <a href=".">
+	      <img src="./resources/assets/img/logo.png" alt="blap Logo" style="width:80px; height:55px">
+	     </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar" >
+		   <ul class="navbar-nav">
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="about">ABOUT</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Bucketlist">BUCKET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Budget">BUDGET</a>
+		      </li>
+		      <li class="nav-item me-5">
+		        <a class="nav-link" href="Mypage">PROFILE</a>
+		      </li>
+		    </ul>
+		  </div>
 	  </div>
-  </div>
-</nav>
-
-<br>
+	</nav>
+	<br>
     <!-- MAIN -->
     <div class="row">
         <!-- CATEGORY -->
         <div class="col-sm-6 pt-4 px-5">
-        <form class="p-2 mb-2">
-	      	<input style="border:none"type="search" class="form-control  border-bottom" autocomplete="false" placeholder="Type # to filter...">
-	    </form>
+	        <form class="p-2 mb-2">
+		      	<input style="border:none"type="search" class="form-control  border-bottom" autocomplete="false" placeholder="Type # to filter...">
+		    </form>
+	    </div>
 
         <!--     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li>
@@ -95,15 +95,13 @@
                     </a>
                 </li>
             </ul> -->
-        </div>
+
+        
         <!-- ADD & ORDER BY -->
         <div class="col-sm-6 pt-3 px-5">
             <div class="container-fluid pt-3  bg-white text-dark">
                 <ul class="nav flex-column">
                     <li class="nav-item text-end">
-	                    <!-- <form class="p-2 mb-2 border-bottom">
-					      	<input type="search" class="form-control" autocomplete="false" placeholder="Type # to filter...">
-					    </form> -->
                         <button  onclick="location.href='./AddList'" type="button" class="btn btn-outline-white btn-sm text-dark">
                             추가하기
                         </button>
