@@ -117,7 +117,7 @@
 				
 				<!-- 프로필 -->
 				
-					<div class = "ml-3" style="padding-left: 37px; padding-bottom: 5px;"><img src="resources/assets/img/user.png" height="70" width="70"></div>
+					<div class = "ml-3" style="padding-left: 37px; padding-bottom: 5px;"><img src="./resources/assets/img/user.png" height="70" width="70"></div>
 					<div  class = "row mt-5" style="padding-left: 58px; display:inline; padding-top: 5px;"> 홍길동
 						<a href="SignIn" style="text-decoration-line : none;"><small class = "text-muted"> 로그아웃</small></a>
 					</div>
@@ -131,7 +131,7 @@
 						<div class = "col-1 " ></div>
 						<div class = "col-3  alert-secondary align-middle" style = "text-align:center; line-height: 40px; width: 180px; height: 40px;background-color:#EBEBEB; border-radius:8px;" >360,000</div>
 						<div class = "col-1" style="line-height: 40px;">₩</div>
-						<div class = "col-3" style = "text-align:center;"><button id="popup_open_btn"><img src="resources/assets/img/금액추가.png" height="40" width="40"></button></div>
+						<div class = "col-3" style = "text-align:center;"><button id="popup_open_btn"><img src="./resources/assets/img/금액추가.png" height="40" width="40"></button></div>
 					</div>
 					
 					<!-- 지출내역 -->
@@ -199,14 +199,14 @@
 					<div class = "row mt-5">
 					카테고리
 					<!-- 카테고리 더하기 빼기 버튼-->
-					<div class="col-1" style = "padding-left:35px" ><button id="cate_p_popup_open_btn"><img src="resources/assets/img/카테고리 더하기.png" height="20" width="20" ></button></div>
+					<div class="col-1" style = "padding-left:35px" ><button id="cate_p_popup_open_btn"><img src="./resources/assets/img/카테고리 더하기.png" height="20" width="20" ></button></div>
 					<div class="col-1" ><button id="cate_m_popup_open_btn"><img src="resources/assets/img/카테고리 빼기.png" height="20" width="20" ></button></div>
 					
 					<!-- 카테고리 각 항목 버튼-->
-					<div class="col-1" style="margin-left:30px; font-size:14; color:#8B8B8F "><img src="resources/assets/img/여행.png" height="50" width="50"><br>    여행</div>
-					<div class="col-1" style="margin-left:15px; font-size:14; color:#8B8B8F"><img src="resources/assets/img/음식.png" height="50" width="50">  음식</div>
-					<div class="col-1 " style="margin-left:15px; font-size:14; color:#8B8B8F"><img src="resources/assets/img/쇼핑.png" height="50" width="50">  쇼핑</div>
-					<div class="col-1" style="margin-left:15px; font-size:14; color:#8B8B8F" ><img src="resources/assets/img/기타.png" height="50" width="50">  기타</div>
+					<div class="col-1" style="margin-left:30px; font-size:14; color:#8B8B8F "><img src="./resources/assets/img/여행.png" height="50" width="50"><br>    여행</div>
+					<div class="col-1" style="margin-left:15px; font-size:14; color:#8B8B8F"><img src="./resources/assets/img/음식.png" height="50" width="50">  음식</div>
+					<div class="col-1 " style="margin-left:15px; font-size:14; color:#8B8B8F"><img src="./resources/assets/img/쇼핑.png" height="50" width="50">  쇼핑</div>
+					<div class="col-1" style="margin-left:15px; font-size:14; color:#8B8B8F" ><img src="./resources/assets/img/기타.png" height="50" width="50">  기타</div>
 					</div>
 					
 				</div>	
@@ -255,7 +255,7 @@
             <div class="col" style = "font-size:14px;" >카테고리 명</div>
             <div class="col" style = "font-size: 14px;" ><input type = "text"></div>
             </div>
-            <a class="finish"><img src="resources/assets/img/완료버튼 이미지.png" ></a>
+            <a class="finish"><img src="./resources/assets/img/완료버튼 이미지.png" ></a>
             <a class="modal_close_btn" style = "font-size 14px; text-align:center; ">x</a>
         </div>
 		</div>
