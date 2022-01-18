@@ -121,7 +121,7 @@
 						<div class="col-sm-6">
 							<div class="p-5">
 								<div>
-									<canvas id="myChart2"></canvas>
+									<canvas id="doughnut-chart" width=250 height=100 style=" margin-top:30px"></canvas> 
 								</div>
 							</div>
 						</div>
@@ -189,7 +189,53 @@
 		};
 
 		const myChart1 = new Chart(document.getElementById('myChart1'), config);
-		const myChart2 = new Chart(document.getElementById('myChart2'), config);
 	</script>
+	
+	<script src="./resources/assets/js/popper.js"></script>
+   <script src="./resources/assets/js/bootstrap.min.js"></script>
+   <script>
+/*    new Chart(document.getElementById("doughnut-chart"), {
+       type: 'doughnut',
+       data: {
+        labels: "여행", "음식", "취미", "쇼핑", "기타"],
+         datasets: [
+           {
+             label: "STATE (percent)",
+             backgroundColor: ["#CE6B6B", "#F1CD71","#569D73"],
+             data: [49, 27, 24]
+           }
+         ]
+       },
+   }); */
+   new Chart(document.getElemenyById("doughnut-chart"),{
+			   type: 'polarArea',
+			   data: data,
+			   options: {
+			     responsive: true,
+			     scales: {
+			       r: {
+			         pointLabels: {
+			           display: true,
+			           centerPointLabels: true,
+			           font: {
+			             size: 18
+			           }
+			         }
+			       }
+			     },
+			     plugins: {
+			       legend: {
+			         position: 'top',
+			       },
+			       title: {
+			         display: true,
+			         text: 'Chart.js Polar Area Chart With Centered Point Labels'
+			       }
+			     }
+			   },
+		
+   })
+ </script>
+ 
 </body>
 </html>

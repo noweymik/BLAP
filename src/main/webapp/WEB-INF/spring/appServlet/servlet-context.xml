@@ -15,15 +15,41 @@
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
 	<resources location="/WEB-INF/views/json/" mapping="/json/**"/>
-	
+	<resources mapping="/assets/**" location="/resources/assets/" /> 
+
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.blap.blapweb" />
+<!-- 	<context:component-scan base-package="com.blap.blapweb" />
+ -->	
+ 
+ 	<context:component-scan base-package="com.blap.blapweb" use-default-filters="false">
+	<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+</context:component-scan>
+ 
+ 
+	<beans:bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <beans:property name="location" value="/WEB-INF/config/config.properties"/>
+        <beans:property name="fileEncoding" value="UTF-8" />
+    </beans:bean>
+
+	<beans:bean id = "dataSource"  class="org.apache.commons.dbcp.BasicDataSource">
+		<beans:property name = "driverClassName" value="${spring.datasource.driverClassName}"/>
+		<beans:property name="url" value="${spring.datasource.url}"/>
+		<beans:property name = "username" value="${spring.datasource.username}"/>
+		<beans:property name = "password" value="${spring.datasource.password}"/>
+	</beans:bean>
 	
+	<beans:bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"> 
+		<beans:property name="mapperLocations" value="classpath*:mapper/**/*.xml"/>   
+		<beans:property name="dataSource" ref="dataSource"/>  
+	</beans:bean>    
 	
+	<beans:bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<beans:constructor-arg index="0" ref="sqlSessionFactory"/>
+	</beans:bean>	
 	
 </beans:beans>

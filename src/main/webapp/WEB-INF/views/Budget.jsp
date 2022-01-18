@@ -175,35 +175,32 @@
    <div class="container" id="content">
       <div class="row">
          <div class="col-lg-7 col-md-12" style="overflow-y:auto;">
-            <div class="border col-lg-10 col-sm-12 my-3 p-3" style="border-radius: 5px;">
-               <span style="display:inline-block; font-size: 20px;width:72%;">[여행] 제주도 여행</span>
-               <span style="font-size: 15px;">예상지출: 62만</span><br>
-               <span style="font-size: 15px;">2022.01.11</span>
-               <button class="btn float-end" id="budget_popup_show" style="font-size: 16px;">VIEW MORE ></button>
+            <div class="border col-lg-10 col-sm-12 mt-5 p-3 mb-4" style="border-radius: 5px;">
+               <span class="fw-bolder "style="display:inline-block; font-size: 20px; width:81%;">[여행] 제주도 여행</span>
+               <span class="align-middle" style="font-size: 15px; ">예상지출: 62만</span><br>
+               <span style="font-size: 15px; color:#908F8F">2022.01.11</span>
+               <button class="btn float-end fw-bolder" id="budget_popup_show" style="font-size: 14px;">VIEW MORE ></button>
                <br>
             </div>
-            <div class="border col-lg-10 col-sm-12 my-3 p-3" style="border-radius: 5px;">
-               <span style="display:inline-block; font-size: 22px;width:72%;">[취미] 테니스 배우기</span>
-               <span style="font-size: 15px;">예상지출: 14만</span><br>
-               <span style="font-size: 15px;">2022.01.11</span>
-               <button class="btn float-end" id="budget_popup_show" style="font-size: 16px;">VIEW MORE >
-               </button>
+            <div class="border col-lg-10 col-sm-12 my-3 p-3 mb-4" style="border-radius: 5px;">
+               <span class="fw-bolder "style="display:inline-block; font-size: 20px; width:81%;">[취미] 테니스 배우기</span>
+               <span class="align-middle" style="font-size: 15px; ">예상지출: 14만</span><br>
+               <span style="font-size: 15px; color:#908F8F">2022.01.11</span>
+               <button class="btn float-end fw-bolder" id="budget_popup_show" style="font-size: 14px;">VIEW MORE ></button>
                <br>
             </div>
-            <div class="border col-lg-10 col-sm-12 my-3 p-3" style="border-radius: 5px;">
-               <span style="display:inline-block; font-size: 22px;width:72%;">[가족] 부모님 여행보내드리기</span>
-               <span style="font-size: 15px;">예상지출: 85만</span><br> 
-               <span style="font-size: 15px;">2022.01.11</span>
-               <button class="btn float-end" id="budget_popup_show" style="font-size: 16px;">VIEW MORE >
-               </button>
+            <div class="border col-lg-10 col-sm-12 my-3 p-3 mb-4" style="border-radius: 5px;">
+               <span class="fw-bolder "style="display:inline-block; font-size: 20px; width:81%;">[가족] 부모님 여행 보내드리기</span>
+               <span class="align-middle" style="font-size: 15px; ">예상지출: 85만</span><br>
+               <span style="font-size: 15px; color:#908F8F">2022.01.11</span>
+               <button class="btn float-end fw-bolder" id="budget_popup_show" style="font-size: 14px;">VIEW MORE ></button>
                <br>
             </div>
-            <div class="border col-lg-10 col-sm-12 my-3 p-3" style="border-radius: 5px;">
-               <span style="display:inline-block; font-size: 22px;width:72%;">[음식] 뭉티기(대구 동성로)</span>
-               <span style="font-size: 15px;">예상지출: 10만</span><br> 
-               <span style="font-size: 15px;">2022.01.11</span>
-               <button class="btn float-end" id="budget_popup_show" style="font-size: 16px;">VIEW MORE >
-               </button>
+            <div class="border col-lg-10 col-sm-12 my-3 p-3 mb-4" style="border-radius: 5px;">
+               <span class="fw-bolder "style="display:inline-block; font-size: 20px; width:81%;">[음식] 뭉티기(대구 동성로)</span>
+               <span class="align-middle" style="font-size: 15px; ">예상지출: 10만</span><br>
+               <span style="font-size: 15px; color:#908F8F">2022.01.11</span>
+               <button class="btn float-end fw-bolder" id="budget_popup_show" style="font-size: 14px;">VIEW MORE ></button>
                <br>
             </div>
          </div>

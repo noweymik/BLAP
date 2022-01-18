@@ -98,8 +98,8 @@
    <p class="pt-5" style="display: inline-block; font-size:13px">도움말</p>
 </div>
 
-<script src="./js/popper.js"></script>
-   <script src="./js/bootstrap.min.js"></script>
+<script src="./resources/assets/js/popper.js"></script>
+   <script src="./resources/assets/js/bootstrap.min.js"></script>
    <script>
    new Chart(document.getElementById("doughnut-chart"), {
        type: 'doughnut',
@@ -114,7 +114,7 @@
          ]
        },
    });
-   </script>
+ </script>
   
 </body>
 </html>
